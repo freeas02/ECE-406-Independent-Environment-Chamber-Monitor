@@ -1,0 +1,7 @@
+C:\Users\freem\OneDrive\Documents\ECE\ECE 405_406\SD_Card_Interface\SDCard_Demo.cydsn\SDCard_Demo.cyprj|67d66d6c-0c76-4360-8675-96f49423b21e
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|dfa618c1-b2d5-4bcc-bace-eb62a5b748a8
+C:\Users\freem\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|7418d574-afb1-4ad0-94b3-0129a6e505fa
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|cd3bdac6-3973-4ac7-a9b2-c954144eea2c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|02b8593d-9af7-4248-820f-4885732c57ee
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|2f07cf56-abec-427d-94b1-68a7f0ca0480
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|79eb6733-454e-4df7-9846-4e50e8a32eaf

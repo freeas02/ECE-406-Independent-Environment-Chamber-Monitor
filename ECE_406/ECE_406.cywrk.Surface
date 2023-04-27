@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="ECE_406\SPI_Master\Generated_Source\PSoC4\ISR_Function">
+<ExpandedNodeIds>
+<v>ECE_406</v>
+<v>ECE_406\SPI_Master</v>
+<v>ECE_406\SPI_Master\TopDesign</v>
+<v>ECE_406\SPI_Master\SPI_Master.cydwr</v>
+<v>ECE_406\SPI_Master\SPI_Master.cydwr\Pins</v>
+<v>ECE_406\SPI_Master\SPI_Master.cydwr\Analog</v>
+<v>ECE_406\SPI_Master\SPI_Master.cydwr\DMA</v>
+<v>ECE_406\SPI_Master\SPI_Master.cydwr\Clocks</v>
+<v>ECE_406\SPI_Master\SPI_Master.cydwr\Interrupts</v>
+<v>ECE_406\SPI_Master\SPI_Master.cydwr\System</v>
+<v>ECE_406\SPI_Master\SPI_Master.cydwr\Directives</v>
+<v>ECE_406\SPI_Master\SPI_Master.cydwr\Flash Security</v>
+<v>ECE_406\SPI_Master\Header Files</v>
+<v>ECE_406\SPI_Master\Header Files\cyapicallbacks.h</v>
+<v>ECE_406\SPI_Master\Source Files</v>
+<v>ECE_406\SPI_Master\Source Files\main.c</v>
+<v>ECE_406\SPI_Master\Generated_Source</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>ECE_406</v>
+<v>ECE_406\SPI_Master</v>
+<v>ECE_406\SPI_Master\TopDesign</v>
+<v>ECE_406\SPI_Master\SPI_Master.cydwr</v>
+<v>ECE_406\SPI_Master\SPI_Master.cydwr\Pins</v>
+<v>ECE_406\SPI_Master\SPI_Master.cydwr\Analog</v>
+<v>ECE_406\SPI_Master\SPI_Master.cydwr\DMA</v>
+<v>ECE_406\SPI_Master\SPI_Master.cydwr\Clocks</v>
+<v>ECE_406\SPI_Master\SPI_Master.cydwr\Interrupts</v>
+<v>ECE_406\SPI_Master\SPI_Master.cydwr\System</v>
+<v>ECE_406\SPI_Master\SPI_Master.cydwr\Directives</v>
+<v>ECE_406\SPI_Master\SPI_Master.cydwr\Flash Security</v>
+<v>ECE_406\SPI_Master\Header Files</v>
+<v>ECE_406\SPI_Master\Header Files\cyapicallbacks.h</v>
+<v>ECE_406\SPI_Master\Source Files</v>
+<v>ECE_406\SPI_Master\Source Files\main.c</v>
+<v>ECE_406\SPI_Master\Generated_Source</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\ADC_Power</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\ADC_Seq_1</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\ADC_Seq_1_intClock</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\ADC_Seq_1_IRQ</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\ADC_Temperature</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\Button_0</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\Button_1</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\Clock</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\cy_boot</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\cy_dmac</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\cy_lfclk</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\Em_EEPROM_Dynamic</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\ISR_Function</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\LCD_RST</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\LED_1</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\LED_2</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\LED_3</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\LED_4</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\SPI</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\SPI_miso_m</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\SPI_mosi_m</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\SPI_SCBCLK</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\SPI_sclk_m</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\SPI_ss0_m</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\SPI_ss1_m</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\SPI_ss2_m</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\SPI_ss3_m</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\SS4</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\Timer</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\UART_1</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\UART_1_rx</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\UART_1_SCBCLK</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\UART_1_tx</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\cycodeshareexport.ld</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\cycodeshareimport.ld</v>
+<v>ECE_406\SPI_Master\Generated_Source\PSoC4\cycodeshareimport.scat</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>ECE_406</v>
+<v>ECE_406\SPI_Master</v>
+<v>ECE_406\SPI_Master\TopDesign</v>
+<v>ECE_406\SPI_Master\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>ECE_406</v>
+<v>ECE_406\SPI_Master</v>
+<v>ECE_406\SPI_Master\TopDesign</v>
+<v>ECE_406\SPI_Master\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>ECE_406</v>
+<v>ECE_406\SPI_Master</v>
+<v>ECE_406\SPI_Master\CortexM0</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_Power.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_Power_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_Seq_1.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_Seq_1_INT.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_Seq_1_intClock.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_Seq_1_IRQ.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_Seq_1_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_Temperature.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_Temperature_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\Button_0.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\Button_0_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\Button_1.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\Button_1_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\Clock.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\CyDMA.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\ISR_Function.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_RST.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_RST_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_1.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_1_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_2.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_2_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_3.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_3_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_4.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_4_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_BOOT.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_miso_m.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_miso_m_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_mosi_m.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_mosi_m_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_SCBCLK.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_sclk_m.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_sclk_m_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_SPI.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_SPI_BOOT.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_SPI_UART.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_ss0_m.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_ss0_m_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_ss1_m.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_ss1_m_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_ss2_m.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_ss2_m_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_ss3_m.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_ss3_m_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SS4.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SS4_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\Timer.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\Timer_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_1.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_1_BOOT.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_1_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_1_rx.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_1_rx_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_1_SCBCLK.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_1_SPI_UART.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_1_SPI_UART_INT.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_1_tx.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_1_tx_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_1_UART.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_1_UART_BOOT.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\SPI_Master.elf</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\SPI_Master.hex</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\SPI_Master.map</v>
+<v>ECE_406\SPI_Master\SPI_Master.gpdsc</v>
+<v>ECE_406\SPI_Master\SPI_Master.rpt</v>
+<v>ECE_406\SPI_Master\SPI_Master_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>ECE_406</v>
+<v>ECE_406\SPI_Master</v>
+<v>ECE_406\SPI_Master\CortexM0</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_Power.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_Power_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_Seq_1.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_Seq_1_INT.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_Seq_1_intClock.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_Seq_1_IRQ.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_Seq_1_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_Temperature.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_Temperature_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\Button_0.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\Button_0_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\Button_1.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\Button_1_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\Clock.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\CyDMA.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\ISR_Function.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_RST.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_RST_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_1.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_1_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_2.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_2_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_3.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_3_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_4.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_4_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_BOOT.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_miso_m.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_miso_m_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_mosi_m.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_mosi_m_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_SCBCLK.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_sclk_m.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_sclk_m_PM.lst</v>
+<v>ECE_406\SPI_Master\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_SPI.lst</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>ECE_406</v>
+<v>ECE_406\SPI_Master</v>
+<v>ECE_406\SPI_Master\PSoC 4 Architecture TRM</v>
+<v>ECE_406\SPI_Master\PSoC 4200 BLE Family Datasheet</v>
+<v>ECE_406\SPI_Master\System Reference Guides</v>
+<v>ECE_406\SPI_Master\System Reference Guides\cy_boot_v6_10</v>
+<v>ECE_406\SPI_Master\System Reference Guides\cy_dmac_v1_10</v>
+<v>ECE_406\SPI_Master\System Reference Guides\cy_lfclk_v1_20</v>
+<v>ECE_406\SPI_Master\ADC_SAR_SEQ_P4_v2_60.pdf</v>
+<v>ECE_406\SPI_Master\cy_clock_v2_20.pdf</v>
+<v>ECE_406\SPI_Master\cy_isr_v1_71.pdf</v>
+<v>ECE_406\SPI_Master\cy_pins_v2_20</v>
+<v>ECE_406\SPI_Master\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>ECE_406\SPI_Master\SCB_P4_v4_0</v>
+<v>ECE_406\SPI_Master\SCB_P4_v4_0\SCB_P4_v4_0.pdf</v>
+<v>ECE_406\SPI_Master\TCPWM_P4_v2_10.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>ECE_406</v>
+<v>ECE_406\SPI_Master</v>
+<v>ECE_406\SPI_Master\PSoC 4 Architecture TRM</v>
+<v>ECE_406\SPI_Master\PSoC 4200 BLE Family Datasheet</v>
+<v>ECE_406\SPI_Master\System Reference Guides</v>
+<v>ECE_406\SPI_Master\System Reference Guides\cy_boot_v6_10</v>
+<v>ECE_406\SPI_Master\System Reference Guides\cy_dmac_v1_10</v>
+<v>ECE_406\SPI_Master\System Reference Guides\cy_lfclk_v1_20</v>
+<v>ECE_406\SPI_Master\ADC_SAR_SEQ_P4_v2_60.pdf</v>
+<v>ECE_406\SPI_Master\cy_clock_v2_20.pdf</v>
+<v>ECE_406\SPI_Master\cy_isr_v1_71.pdf</v>
+<v>ECE_406\SPI_Master\cy_pins_v2_20</v>
+<v>ECE_406\SPI_Master\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>ECE_406\SPI_Master\SCB_P4_v4_0</v>
+<v>ECE_406\SPI_Master\SCB_P4_v4_0\SCB_P4_v4_0.pdf</v>
+<v>ECE_406\SPI_Master\TCPWM_P4_v2_10.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\SPI_Master.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\SPI_Master.cydsn\SPI_Master.cydwr" />
+<name v=".\SPI_Master.cydsn\main.c" />
+<name v=".\SPI_Master.cydsn\Generated_Source\PSoC4\ISR_Function.c" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1849, 1029" SelectedTabbedMdiWindow="c023c4d0-42fa-46ef-b48f-6646e8bbccbd"><DocumentWindow Key="C:\Users\Surface\OneDrive\Documents\ECE\ECE 405_406\ECE_406\SPI_Master.cydsn\TopDesign\TopDesign.cysch" Guid="c65e947e-536b-4635-85da-eb4373dd4c26" /><DocumentWindow Key="C:\Users\Surface\OneDrive\Documents\ECE\ECE 405_406\ECE_406\SPI_Master.cydsn\SPI_Master.cydwr" Guid="c023c4d0-42fa-46ef-b48f-6646e8bbccbd" /><DocumentWindow Key="C:\Users\Surface\OneDrive\Documents\ECE\ECE 405_406\ECE_406\SPI_Master.cydsn\main.c" Guid="61ada714-28cf-45c6-8884-5b738536d946" /><DocumentWindow Key="C:\Users\Surface\OneDrive\Documents\ECE\ECE 405_406\ECE_406\SPI_Master.cydsn\Generated_Source\PSoC4\ISR_Function.c" Guid="ba24bbf3-9a4a-4d20-9578-5065bb1cb6bf" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="488d7e6a-0f37-4a16-b0cf-1234cfd09217" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>

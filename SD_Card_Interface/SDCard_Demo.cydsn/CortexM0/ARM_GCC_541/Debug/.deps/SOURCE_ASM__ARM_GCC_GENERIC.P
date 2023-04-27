@@ -1,0 +1,8 @@
+C:/Users/freem/OneDrive/Documents/ECE/ECE\ 405_406/SD_Card_Interface/SDCard_Demo.cydsn/CortexM0/ARM_GCC_541/Debug/CyBootAsmGnu.o : C:/Users/freem/OneDrive/Documents/ECE/ECE\ 405_406/SD_Card_Interface/SDCard_Demo.cydsn/Generated_Source/PSoC4/CyBootAsmGnu.s C:/Users/freem/OneDrive/Documents/ECE/ECE\ 405_406/SD_Card_Interface/SDCard_Demo.cydsn/Generated_Source/PSoC4/cydevicegnu_trm.inc C:/Users/freem/OneDrive/Documents/ECE/ECE\ 405_406/SD_Card_Interface/SDCard_Demo.cydsn/Generated_Source/PSoC4/cyfittergnu.inc 
+
+C:/Users/freem/OneDrive/Documents/ECE/ECE\ 405_406/SD_Card_Interface/SDCard_Demo.cydsn/Generated_Source/PSoC4/CyBootAsmGnu.s : 
+
+C:/Users/freem/OneDrive/Documents/ECE/ECE\ 405_406/SD_Card_Interface/SDCard_Demo.cydsn/Generated_Source/PSoC4/cydevicegnu_trm.inc : 
+
+C:/Users/freem/OneDrive/Documents/ECE/ECE\ 405_406/SD_Card_Interface/SDCard_Demo.cydsn/Generated_Source/PSoC4/cyfittergnu.inc : 
+

@@ -1,0 +1,2407 @@
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"ThermocoupleCalculator.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	__aeabi_lmul
+  20              		.section	.text.ThermocoupleCalculator_MultShift24,"ax",%progbits
+  21              		.align	2
+  22              		.global	ThermocoupleCalculator_MultShift24
+  23              		.code	16
+  24              		.thumb_func
+  25              		.type	ThermocoupleCalculator_MultShift24, %function
+  26              	ThermocoupleCalculator_MultShift24:
+  27              	.LFB2:
+  28              		.file 1 "Generated_Source\\PSoC4\\ThermocoupleCalculator.c"
+   1:Generated_Source\PSoC4/ThermocoupleCalculator.c **** /*******************************************************************************
+   2:Generated_Source\PSoC4/ThermocoupleCalculator.c **** * File Name: ThermocoupleCalculator.c
+   3:Generated_Source\PSoC4/ThermocoupleCalculator.c **** * Version 1.20
+   4:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *
+   5:Generated_Source\PSoC4/ThermocoupleCalculator.c **** * Description:
+   6:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *  This file provides the source code to the API for the ThermocoupleCalculator
+   7:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *  component
+   8:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *
+   9:Generated_Source\PSoC4/ThermocoupleCalculator.c **** * Note:
+  10:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *  None
+  11:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *
+  12:Generated_Source\PSoC4/ThermocoupleCalculator.c **** ********************************************************************************
+  13:Generated_Source\PSoC4/ThermocoupleCalculator.c **** * Copyright 2012-2013, Cypress Semiconductor Corporation.  All rights reserved.
+  14:Generated_Source\PSoC4/ThermocoupleCalculator.c **** * You may use this file only in accordance with the license, terms, conditions,
+  15:Generated_Source\PSoC4/ThermocoupleCalculator.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  16:Generated_Source\PSoC4/ThermocoupleCalculator.c **** * the software package with which this file was provided.
+  17:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *******************************************************************************/
+  18:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+  19:Generated_Source\PSoC4/ThermocoupleCalculator.c **** #include "ThermocoupleCalculator.h"
+  20:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+  21:Generated_Source\PSoC4/ThermocoupleCalculator.c **** #if(!CY_PSOC3)
+  22:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+  23:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     /*******************************************************************************
+  24:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     * Function Name: ThermocoupleCalculator_MultShift24
+  25:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     ********************************************************************************
+  26:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     *
+  27:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     * Summary:
+  28:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     *  Performs the math function (op1 * op2) >> 24 using 64 bit arithmetic without
+  29:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     *  any loss of precision and without overflow.
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 2
+
+
+  30:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     *
+  31:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     * Parameters:
+  32:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     *  op1: Signed 32-bit operand
+  33:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     *  op2: Signed 24-bit operand
+  34:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     *
+  35:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     * Return:
+  36:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     *  Signed 32-bit result of the math calculation
+  37:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     *
+  38:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     *******************************************************************************/
+  39:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     int32 ThermocoupleCalculator_MultShift24(int32 op1, int32 op2) 
+  40:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     {
+  29              		.loc 1 40 0
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 0
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33              	.LVL0:
+  34 0000 10B5     		push	{r4, lr}
+  35              		.cfi_def_cfa_offset 8
+  36              		.cfi_offset 4, -8
+  37              		.cfi_offset 14, -4
+  38 0002 0A00     		movs	r2, r1
+  39              	.LVL1:
+  41:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         int64 result=0;
+  42:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+  43:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         result = (int64)op1 * (int64)op2;
+  40              		.loc 1 43 0
+  41 0004 C117     		asrs	r1, r0, #31
+  42              	.LVL2:
+  43 0006 D317     		asrs	r3, r2, #31
+  44 0008 FFF7FEFF 		bl	__aeabi_lmul
+  45              	.LVL3:
+  44:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         if (result < 0)
+  46              		.loc 1 44 0
+  47 000c 0029     		cmp	r1, #0
+  48 000e 0BDA     		bge	.L2
+  45:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         {
+  46:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             result = -result;
+  49              		.loc 1 46 0
+  50 0010 0023     		movs	r3, #0
+  51 0012 4242     		rsbs	r2, r0, #0
+  52 0014 8B41     		sbcs	r3, r1
+  53              	.LVL4:
+  47:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             result = (int32)((uint64)((uint64)result >> ThermocoupleCalculator_24BIT_SHIFTING));
+  54              		.loc 1 47 0
+  55 0016 1B02     		lsls	r3, r3, #8
+  56 0018 120E     		lsrs	r2, r2, #24
+  57              	.LVL5:
+  58 001a 1A43     		orrs	r2, r3
+  59 001c 1000     		movs	r0, r2
+  60              	.LVL6:
+  61 001e D117     		asrs	r1, r2, #31
+  62              	.LVL7:
+  48:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             result = -result;
+  63              		.loc 1 48 0
+  64 0020 0023     		movs	r3, #0
+  65 0022 4242     		rsbs	r2, r0, #0
+  66 0024 8B41     		sbcs	r3, r1
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 3
+
+
+  67              	.LVL8:
+  68 0026 03E0     		b	.L4
+  69              	.LVL9:
+  70              	.L2:
+  49:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         }
+  50:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         else
+  51:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         {
+  52:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             result = (int32)((uint64)((uint64)result >> ThermocoupleCalculator_24BIT_SHIFTING));
+  71              		.loc 1 52 0
+  72 0028 0B02     		lsls	r3, r1, #8
+  73 002a 000E     		lsrs	r0, r0, #24
+  74              	.LVL10:
+  75 002c 1843     		orrs	r0, r3
+  76 002e 0200     		movs	r2, r0
+  77              	.L4:
+  53:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         }
+  54:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         return (result);
+  55:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     }        
+  78              		.loc 1 55 0
+  79 0030 1000     		movs	r0, r2
+  80              		@ sp needed
+  81 0032 10BD     		pop	{r4, pc}
+  82              		.cfi_endproc
+  83              	.LFE2:
+  84              		.size	ThermocoupleCalculator_MultShift24, .-ThermocoupleCalculator_MultShift24
+  85              		.section	.text.ThermocoupleCalculator_GetTemperature,"ax",%progbits
+  86              		.align	2
+  87              		.global	ThermocoupleCalculator_GetTemperature
+  88              		.code	16
+  89              		.thumb_func
+  90              		.type	ThermocoupleCalculator_GetTemperature, %function
+  91              	ThermocoupleCalculator_GetTemperature:
+  92              	.LFB3:
+  56:Generated_Source\PSoC4/ThermocoupleCalculator.c **** #endif /* End (!CY_PSOC3) */
+  57:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+  58:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+  59:Generated_Source\PSoC4/ThermocoupleCalculator.c **** /*******************************************************************************
+  60:Generated_Source\PSoC4/ThermocoupleCalculator.c **** * Function Name: ThermocoupleCalculator_GetTemperature
+  61:Generated_Source\PSoC4/ThermocoupleCalculator.c **** ********************************************************************************
+  62:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *
+  63:Generated_Source\PSoC4/ThermocoupleCalculator.c **** * Summary:
+  64:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *  This function takes thermocouple voltage in microvolt as i/p and calculates
+  65:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *  temperature corresponding to the thermocouple voltage. The order of the
+  66:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *  polynomial and the polynomial coefficients used to convert voltage to
+  67:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *  temperature are dependent on the type of thermocouple selected.
+  68:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *
+  69:Generated_Source\PSoC4/ThermocoupleCalculator.c **** * Parameters:
+  70:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *  int32 voltage : Thermocouple voltage measured in microvolts.
+  71:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *
+  72:Generated_Source\PSoC4/ThermocoupleCalculator.c **** * Return:
+  73:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *  int32 : Temperature in 1/100 degree C
+  74:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *
+  75:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *******************************************************************************/
+  76:Generated_Source\PSoC4/ThermocoupleCalculator.c **** int32 ThermocoupleCalculator_GetTemperature(int32 voltage) 
+  77:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+  78:Generated_Source\PSoC4/ThermocoupleCalculator.c **** #if(CY_PSOC3)
+  79:Generated_Source\PSoC4/ThermocoupleCalculator.c **** {
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 4
+
+
+  80:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+  81:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     /***************************************
+  82:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     *  Customizer Generated Coefficients
+  83:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     ***************************************/
+  84:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     const int32 CYCODE ThermocoupleCalculator_coeffVT[][3] = {{675113, 565925, -13785657},
+  85:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                           {358257198, 325093793, 247382587},
+  86:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                           {85791428, -10286661, -180220095},
+  87:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                           {267517030, 75092971, 169309160},
+  88:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                           {240610908, -100723723, -75207091},
+  89:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                           {89458772, 37722436, 13834210}};
+  90:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+  91:Generated_Source\PSoC4/ThermocoupleCalculator.c **** const int32 CYCODE ThermocoupleCalculator_voltRange[2] = {0, 20644};
+  92:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+  93:Generated_Source\PSoC4/ThermocoupleCalculator.c **** const int8 CYCODE ThermocoupleCalculator_xScaleVT[3] = {12, 14, 15};
+  94:Generated_Source\PSoC4/ThermocoupleCalculator.c **** const int8 CYCODE ThermocoupleCalculator_coefScaleVT[3] = {15, 13, 11};
+  95:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+  96:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     /* Variable to store temperature */
+  97:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     float32 temp=0.0f;
+  98:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     float32 voltageNorm=0.0f;
+  99:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     uint8 i=0u;
+ 100:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 101:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     #if (ThermocoupleCalculator_VT_RANGE_LEN == ThermocoupleCalculator_THREE)
+ 102:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     {
+ 103:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         voltageNorm = (float32)voltage;
+ 104:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 105:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         if(voltage < ThermocoupleCalculator_voltRange[ThermocoupleCalculator_RANGE_MAS_0] )
+ 106:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         {
+ 107:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             for (i=ThermocoupleCalculator_ORDER_VT - 1u; i > 0u; i--)
+ 108:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 109:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = (temp + ThermocoupleCalculator_coeffVT[i][ThermocoupleCalculator_RANGE_MAS_0
+ 110:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 111:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             temp = (temp + ThermocoupleCalculator_coeffVT[ThermocoupleCalculator_FIRST_EL_MAS][Ther
+ 112:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         }
+ 113:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 114:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         else if(voltage <= ThermocoupleCalculator_voltRange[ThermocoupleCalculator_RANGE_MAS_1] )
+ 115:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         {
+ 116:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             for (i=ThermocoupleCalculator_ORDER_VT - 1u; i > 0u; i--)
+ 117:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 118:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = (temp + ThermocoupleCalculator_coeffVT[i][ThermocoupleCalculator_RANGE_MAS_1
+ 119:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 120:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             temp = (temp + ThermocoupleCalculator_coeffVT[ThermocoupleCalculator_FIRST_EL_MAS][Ther
+ 121:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         }
+ 122:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 123:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         else if(voltage <= ThermocoupleCalculator_voltRange[ThermocoupleCalculator_RANGE_MAS_2] )
+ 124:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         {
+ 125:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             for (i=ThermocoupleCalculator_ORDER_VT - 1u; i > 0u; i--)
+ 126:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 127:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = (temp + ThermocoupleCalculator_coeffVT[i][ThermocoupleCalculator_RANGE_MAS_2
+ 128:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 129:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             temp = (temp + ThermocoupleCalculator_coeffVT[ThermocoupleCalculator_FIRST_EL_MAS][Ther
+ 130:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         }
+ 131:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 132:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         else
+ 133:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         {
+ 134:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             for (i=ThermocoupleCalculator_ORDER_VT - 1u; i > 0u; i--)
+ 135:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 136:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = (temp + ThermocoupleCalculator_coeffVT[i][ThermocoupleCalculator_RANGE_MAS_3
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 5
+
+
+ 137:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 138:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             temp = (temp + ThermocoupleCalculator_coeffVT[ThermocoupleCalculator_FIRST_EL_MAS][Ther
+ 139:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         }
+ 140:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     }
+ 141:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 142:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     #else
+ 143:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     {
+ 144:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         voltageNorm = (float32)voltage;
+ 145:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 146:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         if(voltage < ThermocoupleCalculator_voltRange[ThermocoupleCalculator_RANGE_MAS_0] )
+ 147:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         {
+ 148:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             for (i=ThermocoupleCalculator_ORDER_VT - 1u; i > 0u; i--)
+ 149:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 150:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = (temp + ThermocoupleCalculator_coeffVT[i][ThermocoupleCalculator_RANGE_MAS_0
+ 151:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 152:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             temp = (temp + ThermocoupleCalculator_coeffVT[ThermocoupleCalculator_FIRST_EL_MAS][Ther
+ 153:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         }
+ 154:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 155:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         else if(voltage <= ThermocoupleCalculator_voltRange[ThermocoupleCalculator_RANGE_MAS_1] )
+ 156:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         {
+ 157:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             for (i=ThermocoupleCalculator_ORDER_VT - 1u; i > 0u; i--)
+ 158:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 159:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = (temp + ThermocoupleCalculator_coeffVT[i][ThermocoupleCalculator_RANGE_MAS_1
+ 160:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 161:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             temp = (temp + ThermocoupleCalculator_coeffVT[ThermocoupleCalculator_FIRST_EL_MAS][Ther
+ 162:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         }
+ 163:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 164:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         else
+ 165:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         {
+ 166:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             for (i=ThermocoupleCalculator_ORDER_VT - 1u; i > 0u; i--)
+ 167:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 168:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = (temp + ThermocoupleCalculator_coeffVT[i][ThermocoupleCalculator_RANGE_MAS_2
+ 169:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 170:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             temp = (temp + ThermocoupleCalculator_coeffVT[ThermocoupleCalculator_FIRST_EL_MAS][Ther
+ 171:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         }
+ 172:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     }
+ 173:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 174:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     #endif /* End  ThermocoupleCalculator_VT_RANGE_LEN == ThermocoupleCalculator_THREE */
+ 175:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 176:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     return ((int32)(temp));
+ 177:Generated_Source\PSoC4/ThermocoupleCalculator.c **** }
+ 178:Generated_Source\PSoC4/ThermocoupleCalculator.c **** #else
+ 179:Generated_Source\PSoC4/ThermocoupleCalculator.c **** {
+  93              		.loc 1 179 0
+  94              		.cfi_startproc
+  95              		@ args = 0, pretend = 0, frame = 72
+  96              		@ frame_needed = 0, uses_anonymous_args = 0
+  97              	.LVL11:
+  98 0000 30B5     		push	{r4, r5, lr}
+  99              		.cfi_def_cfa_offset 12
+ 100              		.cfi_offset 4, -12
+ 101              		.cfi_offset 5, -8
+ 102              		.cfi_offset 14, -4
+ 103 0002 93B0     		sub	sp, sp, #76
+ 104              		.cfi_def_cfa_offset 88
+ 105 0004 0400     		movs	r4, r0
+ 180:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 6
+
+
+ 181:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     /***************************************
+ 182:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     *  Customizer Generated Coefficients
+ 183:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     ***************************************/
+ 184:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     const int32 CYCODE ThermocoupleCalculator_coeffVT[][3] = {{675113, 565925, -13785657},
+ 106              		.loc 1 184 0
+ 107 0006 4822     		movs	r2, #72
+ 108 0008 3149     		ldr	r1, .L21
+ 109 000a 6846     		mov	r0, sp
+ 110              	.LVL12:
+ 111 000c FFF7FEFF 		bl	memcpy
+ 112              	.LVL13:
+ 185:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                           {358257198, 325093793, 247382587},
+ 186:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                           {85791428, -10286661, -180220095},
+ 187:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                           {267517030, 75092971, 169309160},
+ 188:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                           {240610908, -100723723, -75207091},
+ 189:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                           {89458772, 37722436, 13834210}};
+ 190:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 191:Generated_Source\PSoC4/ThermocoupleCalculator.c **** const int32 CYCODE ThermocoupleCalculator_voltRange[2] = {0, 20644};
+ 192:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 193:Generated_Source\PSoC4/ThermocoupleCalculator.c **** const int8 CYCODE ThermocoupleCalculator_xScaleVT[3] = {12, 14, 15};
+ 194:Generated_Source\PSoC4/ThermocoupleCalculator.c **** const int8 CYCODE ThermocoupleCalculator_coefScaleVT[3] = {15, 13, 11};
+ 195:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 196:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     /* Variable to store temperature */
+ 197:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     int32 temp=0;
+ 198:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     uint8 i=0u;
+ 199:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 200:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     #if (ThermocoupleCalculator_VT_RANGE_LEN == ThermocoupleCalculator_THREE)
+ 201:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     {
+ 202:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         if(voltage < ThermocoupleCalculator_voltRange[ThermocoupleCalculator_RANGE_MAS_0] )
+ 203:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         {
+ 204:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             if (voltage < 0)
+ 205:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 206:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = -voltage;
+ 207:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = (int32)((uint64)((uint64)voltage << 
+ 208:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                (ThermocoupleCalculator_IN_NORMALIZATION_VT - 
+ 209:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                 ThermocoupleCalculator_xScaleVT[ThermocoupleCalcula
+ 210:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = -voltage;
+ 211:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 212:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             else
+ 213:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 214:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = (int32)((uint64)((uint64)voltage << 
+ 215:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                (ThermocoupleCalculator_IN_NORMALIZATION_VT - 
+ 216:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                 ThermocoupleCalculator_xScaleVT[ThermocoupleCalcula
+ 217:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }            
+ 218:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 219:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             for (i=ThermocoupleCalculator_ORDER_VT - 1u; i > 0u; i--)
+ 220:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 221:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = ThermocoupleCalculator_MultShift24((ThermocoupleCalculator_coeffVT[i][Thermo
+ 222:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                        temp), voltage);
+ 223:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 224:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 225:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             if(ThermocoupleCalculator_coefScaleVT[ThermocoupleCalculator_RANGE_MAS_0] < 0)
+ 226:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 227:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = (int32)((uint64)((uint64)(int32)(temp + 
+ 228:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coeffVT[ThermocoupleCalculator_FIRST_EL_MAS][Thermoc
+ 229:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coefScaleVT[ThermocoupleCalculator_RANGE_MAS_0]));
+ 230:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 7
+
+
+ 231:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 232:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             else
+ 233:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 234:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = (int32)((uint32)((uint64)(int32)(temp + 
+ 235:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coeffVT[ThermocoupleCalculator_FIRST_EL_MAS][Thermoc
+ 236:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coefScaleVT[ThermocoupleCalculator_RANGE_MAS_0]));
+ 237:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 238:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         }
+ 239:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 240:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         else if(voltage <= ThermocoupleCalculator_voltRange[ThermocoupleCalculator_RANGE_MAS_1] )
+ 241:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         {
+ 242:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             if (voltage < 0)
+ 243:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 244:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = -voltage;
+ 245:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = (int32)((uint64)((uint64)voltage << 
+ 246:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                (ThermocoupleCalculator_IN_NORMALIZATION_VT - 
+ 247:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                 ThermocoupleCalculator_xScaleVT[ThermocoupleCalcula
+ 248:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = -voltage;
+ 249:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 250:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             else
+ 251:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 252:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = (int32)((uint64)((uint64)voltage << 
+ 253:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                (ThermocoupleCalculator_IN_NORMALIZATION_VT - 
+ 254:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                 ThermocoupleCalculator_xScaleVT[ThermocoupleCalcula
+ 255:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }              
+ 256:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             
+ 257:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             for (i=ThermocoupleCalculator_ORDER_VT - 1u; i > 0u; i--)
+ 258:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 259:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = ThermocoupleCalculator_MultShift24((ThermocoupleCalculator_coeffVT[i][Thermo
+ 260:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                        temp), voltage);
+ 261:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 262:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 263:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             if(ThermocoupleCalculator_coefScaleVT[ThermocoupleCalculator_RANGE_MAS_1] < 0)
+ 264:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 265:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = (int32)((uint64)((uint64)(int32)(temp + 
+ 266:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coeffVT[ThermocoupleCalculator_FIRST_EL_MAS][Thermoc
+ 267:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coefScaleVT[ThermocoupleCalculator_RANGE_MAS_1]));
+ 268:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 269:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 270:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             else
+ 271:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 272:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = (int32)((uint32)((uint64)(int32)(temp + 
+ 273:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coeffVT[ThermocoupleCalculator_FIRST_EL_MAS][Thermoc
+ 274:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coefScaleVT[ThermocoupleCalculator_RANGE_MAS_1]));
+ 275:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 276:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 277:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         }
+ 278:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 279:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         else if(voltage <= ThermocoupleCalculator_voltRange[ThermocoupleCalculator_RANGE_MAS_2] )
+ 280:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         {
+ 281:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             if (voltage < 0)
+ 282:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 283:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = -voltage;
+ 284:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = (int32)((uint64)((uint64)voltage << 
+ 285:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                (ThermocoupleCalculator_IN_NORMALIZATION_VT - 
+ 286:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                 ThermocoupleCalculator_xScaleVT[ThermocoupleCalcula
+ 287:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = -voltage;
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 8
+
+
+ 288:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 289:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             else
+ 290:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 291:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = (int32)((uint64)((uint64)voltage << 
+ 292:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                (ThermocoupleCalculator_IN_NORMALIZATION_VT - 
+ 293:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                 ThermocoupleCalculator_xScaleVT[ThermocoupleCalcula
+ 294:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }              
+ 295:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 296:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             for (i=ThermocoupleCalculator_ORDER_VT - 1u; i > 0u; i--)
+ 297:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 298:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = ThermocoupleCalculator_MultShift24((ThermocoupleCalculator_coeffVT[i][Thermo
+ 299:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                        temp), voltage);
+ 300:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 301:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 302:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             if(ThermocoupleCalculator_coefScaleVT[ThermocoupleCalculator_RANGE_MAS_2] < 0)
+ 303:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 304:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = (int32)((uint64)((uint64)(int32)(temp + 
+ 305:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coeffVT[ThermocoupleCalculator_FIRST_EL_MAS][Thermoc
+ 306:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coefScaleVT[ThermocoupleCalculator_RANGE_MAS_2]));
+ 307:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 308:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 309:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             else
+ 310:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 311:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = (int32)((uint32)((uint64)(int32)(temp + 
+ 312:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coeffVT[ThermocoupleCalculator_FIRST_EL_MAS][Thermoc
+ 313:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coefScaleVT[ThermocoupleCalculator_RANGE_MAS_2]));
+ 314:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 315:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         }
+ 316:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 317:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         else
+ 318:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         {
+ 319:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             if (voltage < 0)
+ 320:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 321:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = -voltage;
+ 322:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = (int32)((uint64)((uint64)voltage << 
+ 323:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                (ThermocoupleCalculator_IN_NORMALIZATION_VT - 
+ 324:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                 ThermocoupleCalculator_xScaleVT[ThermocoupleCalcula
+ 325:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = -voltage;
+ 326:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 327:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             else
+ 328:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 329:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = (int32)((uint64)((uint64)voltage << 
+ 330:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                (ThermocoupleCalculator_IN_NORMALIZATION_VT - 
+ 331:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                 ThermocoupleCalculator_xScaleVT[ThermocoupleCalcula
+ 332:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }              
+ 333:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 334:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             for (i=ThermocoupleCalculator_ORDER_VT - 1u; i > 0u; i--)
+ 335:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 336:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = ThermocoupleCalculator_MultShift24((ThermocoupleCalculator_coeffVT[i][Thermo
+ 337:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                        temp), voltage);
+ 338:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 339:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 340:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             if(ThermocoupleCalculator_coefScaleVT[ThermocoupleCalculator_RANGE_MAS_3] < 0)
+ 341:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 342:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = (int32)((uint64)((uint64)(int32)(temp + 
+ 343:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coeffVT[ThermocoupleCalculator_FIRST_EL_MAS][Thermoc
+ 344:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coefScaleVT[ThermocoupleCalculator_RANGE_MAS_3]));
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 9
+
+
+ 345:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 346:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 347:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             else
+ 348:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 349:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = (int32)((uint32)((uint64)(int32)(temp + 
+ 350:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coeffVT[ThermocoupleCalculator_FIRST_EL_MAS][Thermoc
+ 351:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coefScaleVT[ThermocoupleCalculator_RANGE_MAS_3]));
+ 352:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 353:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         }
+ 354:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     }
+ 355:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 356:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     #else
+ 357:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     {
+ 358:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         if(voltage < ThermocoupleCalculator_voltRange[ThermocoupleCalculator_RANGE_MAS_0] )
+ 113              		.loc 1 358 0
+ 114 0010 002C     		cmp	r4, #0
+ 115 0012 1CDA     		bge	.L6
+ 359:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         {
+ 360:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             if (voltage < 0)
+ 116              		.loc 1 360 0
+ 117 0014 03DA     		bge	.L7
+ 361:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 362:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = -voltage;
+ 118              		.loc 1 362 0
+ 119 0016 6442     		rsbs	r4, r4, #0
+ 120              	.LVL14:
+ 363:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = (int32)((uint64)((uint64)voltage << 
+ 121              		.loc 1 363 0
+ 122 0018 2403     		lsls	r4, r4, #12
+ 123              	.LVL15:
+ 364:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                (ThermocoupleCalculator_IN_NORMALIZATION_VT - 
+ 365:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                 ThermocoupleCalculator_xScaleVT[ThermocoupleCalcula
+ 366:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = -voltage;
+ 124              		.loc 1 366 0
+ 125 001a 6542     		rsbs	r5, r4, #0
+ 126              	.LVL16:
+ 127 001c 00E0     		b	.L8
+ 128              	.LVL17:
+ 129              	.L7:
+ 367:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 368:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             else
+ 369:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 370:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = (int32)((uint64)((uint64)voltage << 
+ 130              		.loc 1 370 0
+ 131 001e 2503     		lsls	r5, r4, #12
+ 132              	.LVL18:
+ 133              	.L8:
+ 371:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                (ThermocoupleCalculator_IN_NORMALIZATION_VT - 
+ 372:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                 ThermocoupleCalculator_xScaleVT[ThermocoupleCalcula
+ 373:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }            
+ 374:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 375:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             for (i=ThermocoupleCalculator_ORDER_VT - 1u; i > 0u; i--)
+ 134              		.loc 1 375 0
+ 135 0020 0524     		movs	r4, #5
+ 197:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     uint8 i=0u;
+ 136              		.loc 1 197 0
+ 137 0022 0020     		movs	r0, #0
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 10
+
+
+ 138              		.loc 1 375 0
+ 139 0024 0AE0     		b	.L9
+ 140              	.LVL19:
+ 141              	.L10:
+ 376:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 377:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = ThermocoupleCalculator_MultShift24((ThermocoupleCalculator_coeffVT[i][Thermo
+ 142              		.loc 1 377 0 discriminator 3
+ 143 0026 6300     		lsls	r3, r4, #1
+ 144 0028 1B19     		adds	r3, r3, r4
+ 145 002a 9A00     		lsls	r2, r3, #2
+ 146 002c 6B46     		mov	r3, sp
+ 147 002e D358     		ldr	r3, [r2, r3]
+ 148 0030 C018     		adds	r0, r0, r3
+ 149              	.LVL20:
+ 150 0032 2900     		movs	r1, r5
+ 151 0034 FFF7FEFF 		bl	ThermocoupleCalculator_MultShift24
+ 152              	.LVL21:
+ 375:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 153              		.loc 1 375 0 discriminator 3
+ 154 0038 013C     		subs	r4, r4, #1
+ 155              	.LVL22:
+ 156 003a E4B2     		uxtb	r4, r4
+ 157              	.LVL23:
+ 158              	.L9:
+ 375:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 159              		.loc 1 375 0 is_stmt 0 discriminator 1
+ 160 003c 002C     		cmp	r4, #0
+ 161 003e F2D1     		bne	.L10
+ 378:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                        temp), voltage);
+ 379:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 380:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 381:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             if(ThermocoupleCalculator_coefScaleVT[ThermocoupleCalculator_RANGE_MAS_0] < 0)
+ 382:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 383:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = (int32)((uint64)((uint64)(int32)(temp + 
+ 384:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coeffVT[ThermocoupleCalculator_FIRST_EL_MAS][Thermoc
+ 385:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coefScaleVT[ThermocoupleCalculator_RANGE_MAS_0]));
+ 386:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 387:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 388:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             else
+ 389:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 390:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = (int32)((uint32)((uint64)(int32)(temp + 
+ 162              		.loc 1 390 0 is_stmt 1
+ 163 0040 244B     		ldr	r3, .L21+4
+ 164 0042 C318     		adds	r3, r0, r3
+ 165 0044 D817     		asrs	r0, r3, #31
+ 166              	.LVL24:
+ 391:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coeffVT[ThermocoupleCalculator_FIRST_EL_MAS][Thermoc
+ 167              		.loc 1 391 0
+ 168 0046 4004     		lsls	r0, r0, #17
+ 169 0048 DB0B     		lsrs	r3, r3, #15
+ 170              	.LVL25:
+ 171 004a 1843     		orrs	r0, r3
+ 172              	.LVL26:
+ 173 004c 3DE0     		b	.L11
+ 174              	.LVL27:
+ 175              	.L6:
+ 392:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coefScaleVT[ThermocoupleCalculator_RANGE_MAS_0]));
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 11
+
+
+ 393:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 394:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         }
+ 395:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 396:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         else if(voltage <= ThermocoupleCalculator_voltRange[ThermocoupleCalculator_RANGE_MAS_1] )
+ 176              		.loc 1 396 0
+ 177 004e 224B     		ldr	r3, .L21+8
+ 178 0050 9C42     		cmp	r4, r3
+ 179 0052 1DDC     		bgt	.L12
+ 397:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         {
+ 398:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             if (voltage < 0)
+ 180              		.loc 1 398 0
+ 181 0054 002C     		cmp	r4, #0
+ 182 0056 03DA     		bge	.L13
+ 399:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 400:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = -voltage;
+ 183              		.loc 1 400 0
+ 184 0058 6442     		rsbs	r4, r4, #0
+ 185              	.LVL28:
+ 401:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = (int32)((uint64)((uint64)voltage << 
+ 186              		.loc 1 401 0
+ 187 005a A402     		lsls	r4, r4, #10
+ 188              	.LVL29:
+ 402:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                (ThermocoupleCalculator_IN_NORMALIZATION_VT - 
+ 403:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                 ThermocoupleCalculator_xScaleVT[ThermocoupleCalcula
+ 404:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = -voltage;
+ 189              		.loc 1 404 0
+ 190 005c 6542     		rsbs	r5, r4, #0
+ 191              	.LVL30:
+ 192 005e 00E0     		b	.L14
+ 193              	.LVL31:
+ 194              	.L13:
+ 405:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 406:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             else
+ 407:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 408:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = (int32)((uint64)((uint64)voltage << 
+ 195              		.loc 1 408 0
+ 196 0060 A502     		lsls	r5, r4, #10
+ 197              	.LVL32:
+ 198              	.L14:
+ 409:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                (ThermocoupleCalculator_IN_NORMALIZATION_VT - 
+ 410:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                 ThermocoupleCalculator_xScaleVT[ThermocoupleCalcula
+ 411:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }              
+ 412:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             
+ 413:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             for (i=ThermocoupleCalculator_ORDER_VT - 1u; i > 0u; i--)
+ 199              		.loc 1 413 0
+ 200 0062 0524     		movs	r4, #5
+ 197:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     uint8 i=0u;
+ 201              		.loc 1 197 0
+ 202 0064 0020     		movs	r0, #0
+ 203              		.loc 1 413 0
+ 204 0066 0AE0     		b	.L15
+ 205              	.LVL33:
+ 206              	.L16:
+ 414:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 415:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = ThermocoupleCalculator_MultShift24((ThermocoupleCalculator_coeffVT[i][Thermo
+ 207              		.loc 1 415 0 discriminator 3
+ 208 0068 6200     		lsls	r2, r4, #1
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 12
+
+
+ 209 006a 1219     		adds	r2, r2, r4
+ 210 006c 9300     		lsls	r3, r2, #2
+ 211 006e 6B44     		add	r3, r3, sp
+ 212 0070 5B68     		ldr	r3, [r3, #4]
+ 213 0072 C018     		adds	r0, r0, r3
+ 214              	.LVL34:
+ 215 0074 2900     		movs	r1, r5
+ 216 0076 FFF7FEFF 		bl	ThermocoupleCalculator_MultShift24
+ 217              	.LVL35:
+ 413:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 218              		.loc 1 413 0 discriminator 3
+ 219 007a 013C     		subs	r4, r4, #1
+ 220              	.LVL36:
+ 221 007c E4B2     		uxtb	r4, r4
+ 222              	.LVL37:
+ 223              	.L15:
+ 413:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 224              		.loc 1 413 0 is_stmt 0 discriminator 1
+ 225 007e 002C     		cmp	r4, #0
+ 226 0080 F2D1     		bne	.L16
+ 416:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                        temp), voltage);
+ 417:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 418:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 419:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             if(ThermocoupleCalculator_coefScaleVT[ThermocoupleCalculator_RANGE_MAS_1] < 0)
+ 420:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 421:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = (int32)((uint64)((uint64)(int32)(temp + 
+ 422:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coeffVT[ThermocoupleCalculator_FIRST_EL_MAS][Thermoc
+ 423:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coefScaleVT[ThermocoupleCalculator_RANGE_MAS_1]));
+ 424:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 425:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 426:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             else
+ 427:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 428:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = (int32)((uint32)((uint64)(int32)(temp + 
+ 227              		.loc 1 428 0 is_stmt 1
+ 228 0082 164B     		ldr	r3, .L21+12
+ 229 0084 C318     		adds	r3, r0, r3
+ 230 0086 D817     		asrs	r0, r3, #31
+ 231              	.LVL38:
+ 429:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coeffVT[ThermocoupleCalculator_FIRST_EL_MAS][Thermoc
+ 232              		.loc 1 429 0
+ 233 0088 C004     		lsls	r0, r0, #19
+ 234 008a 5B0B     		lsrs	r3, r3, #13
+ 235              	.LVL39:
+ 236 008c 1843     		orrs	r0, r3
+ 237              	.LVL40:
+ 238 008e 1CE0     		b	.L11
+ 239              	.LVL41:
+ 240              	.L12:
+ 430:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coefScaleVT[ThermocoupleCalculator_RANGE_MAS_1]));
+ 431:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 432:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         }
+ 433:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 434:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         else
+ 435:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         {
+ 436:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             if (voltage < 0)
+ 241              		.loc 1 436 0
+ 242 0090 002C     		cmp	r4, #0
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 13
+
+
+ 243 0092 03DA     		bge	.L17
+ 437:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 438:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = -voltage;
+ 244              		.loc 1 438 0
+ 245 0094 6442     		rsbs	r4, r4, #0
+ 246              	.LVL42:
+ 439:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = (int32)((uint64)((uint64)voltage << 
+ 247              		.loc 1 439 0
+ 248 0096 6402     		lsls	r4, r4, #9
+ 249              	.LVL43:
+ 440:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                (ThermocoupleCalculator_IN_NORMALIZATION_VT - 
+ 441:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                 ThermocoupleCalculator_xScaleVT[ThermocoupleCalcula
+ 442:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = -voltage;
+ 250              		.loc 1 442 0
+ 251 0098 6542     		rsbs	r5, r4, #0
+ 252              	.LVL44:
+ 253 009a 00E0     		b	.L18
+ 254              	.LVL45:
+ 255              	.L17:
+ 443:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 444:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             else
+ 445:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 446:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 voltage = (int32)((uint64)((uint64)voltage << 
+ 256              		.loc 1 446 0
+ 257 009c 6502     		lsls	r5, r4, #9
+ 258              	.LVL46:
+ 259              	.L18:
+ 447:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                (ThermocoupleCalculator_IN_NORMALIZATION_VT - 
+ 448:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                 ThermocoupleCalculator_xScaleVT[ThermocoupleCalcula
+ 449:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }              
+ 450:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 451:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             for (i=ThermocoupleCalculator_ORDER_VT - 1u; i > 0u; i--)
+ 260              		.loc 1 451 0
+ 261 009e 0524     		movs	r4, #5
+ 197:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     uint8 i=0u;
+ 262              		.loc 1 197 0
+ 263 00a0 0020     		movs	r0, #0
+ 264              		.loc 1 451 0
+ 265 00a2 0AE0     		b	.L19
+ 266              	.LVL47:
+ 267              	.L20:
+ 452:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 453:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = ThermocoupleCalculator_MultShift24((ThermocoupleCalculator_coeffVT[i][Thermo
+ 268              		.loc 1 453 0 discriminator 3
+ 269 00a4 6200     		lsls	r2, r4, #1
+ 270 00a6 1219     		adds	r2, r2, r4
+ 271 00a8 9300     		lsls	r3, r2, #2
+ 272 00aa 6B44     		add	r3, r3, sp
+ 273 00ac 9B68     		ldr	r3, [r3, #8]
+ 274 00ae C018     		adds	r0, r0, r3
+ 275              	.LVL48:
+ 276 00b0 2900     		movs	r1, r5
+ 277 00b2 FFF7FEFF 		bl	ThermocoupleCalculator_MultShift24
+ 278              	.LVL49:
+ 451:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 279              		.loc 1 451 0 discriminator 3
+ 280 00b6 013C     		subs	r4, r4, #1
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 14
+
+
+ 281              	.LVL50:
+ 282 00b8 E4B2     		uxtb	r4, r4
+ 283              	.LVL51:
+ 284              	.L19:
+ 451:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 285              		.loc 1 451 0 is_stmt 0 discriminator 1
+ 286 00ba 002C     		cmp	r4, #0
+ 287 00bc F2D1     		bne	.L20
+ 454:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                        temp), voltage);
+ 455:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 456:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 457:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             if(ThermocoupleCalculator_coefScaleVT[ThermocoupleCalculator_RANGE_MAS_2] < 0)
+ 458:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 459:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = (int32)((uint64)((uint64)(int32)(temp + 
+ 460:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coeffVT[ThermocoupleCalculator_FIRST_EL_MAS][Thermoc
+ 461:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coefScaleVT[ThermocoupleCalculator_RANGE_MAS_2]));
+ 462:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 463:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 464:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             else
+ 465:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             {
+ 466:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                 temp = (int32)((uint32)((uint64)(int32)(temp + 
+ 288              		.loc 1 466 0 is_stmt 1
+ 289 00be 084B     		ldr	r3, .L21+16
+ 290 00c0 C318     		adds	r3, r0, r3
+ 291 00c2 D817     		asrs	r0, r3, #31
+ 292              	.LVL52:
+ 467:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coeffVT[ThermocoupleCalculator_FIRST_EL_MAS][Thermoc
+ 293              		.loc 1 467 0
+ 294 00c4 4005     		lsls	r0, r0, #21
+ 295 00c6 DB0A     		lsrs	r3, r3, #11
+ 296              	.LVL53:
+ 297 00c8 1843     		orrs	r0, r3
+ 298              	.LVL54:
+ 299              	.L11:
+ 468:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                         ThermocoupleCalculator_coefScaleVT[ThermocoupleCalculator_RANGE_MAS_2]));
+ 469:Generated_Source\PSoC4/ThermocoupleCalculator.c ****             }
+ 470:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         }
+ 471:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     }
+ 472:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 473:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     #endif /* End ThermocoupleCalculator_VT_RANGE_LEN == ThermocoupleCalculator_THREE */
+ 474:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 475:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     return (temp);
+ 476:Generated_Source\PSoC4/ThermocoupleCalculator.c **** }
+ 300              		.loc 1 476 0
+ 301 00ca 13B0     		add	sp, sp, #76
+ 302              		@ sp needed
+ 303              	.LVL55:
+ 304              	.LVL56:
+ 305 00cc 30BD     		pop	{r4, r5, pc}
+ 306              	.L22:
+ 307 00ce C046     		.align	2
+ 308              	.L21:
+ 309 00d0 00000000 		.word	.LANCHOR0
+ 310 00d4 294D0A00 		.word	675113
+ 311 00d8 A4500000 		.word	20644
+ 312 00dc A5A20800 		.word	565925
+ 313 00e0 C7A52DFF 		.word	-13785657
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 15
+
+
+ 314              		.cfi_endproc
+ 315              	.LFE3:
+ 316              		.size	ThermocoupleCalculator_GetTemperature, .-ThermocoupleCalculator_GetTemperature
+ 317              		.section	.text.ThermocoupleCalculator_GetVoltage,"ax",%progbits
+ 318              		.align	2
+ 319              		.global	ThermocoupleCalculator_GetVoltage
+ 320              		.code	16
+ 321              		.thumb_func
+ 322              		.type	ThermocoupleCalculator_GetVoltage, %function
+ 323              	ThermocoupleCalculator_GetVoltage:
+ 324              	.LFB4:
+ 477:Generated_Source\PSoC4/ThermocoupleCalculator.c **** #endif /* End CY_PSOC3 */
+ 478:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 479:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 480:Generated_Source\PSoC4/ThermocoupleCalculator.c **** /*******************************************************************************
+ 481:Generated_Source\PSoC4/ThermocoupleCalculator.c **** * Function Name: ThermocoupleCalculator_GetVoltage
+ 482:Generated_Source\PSoC4/ThermocoupleCalculator.c **** ********************************************************************************
+ 483:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *
+ 484:Generated_Source\PSoC4/ThermocoupleCalculator.c **** * Summary:
+ 485:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *  This function takes the temperature as input and provides the expected
+ 486:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *  voltage for that temperature.
+ 487:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *
+ 488:Generated_Source\PSoC4/ThermocoupleCalculator.c **** * Parameters:
+ 489:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *  int32 temperature : Temperature of the cold junction in 1/100 degree C
+ 490:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *
+ 491:Generated_Source\PSoC4/ThermocoupleCalculator.c **** * Return:
+ 492:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *  int32 : Expected voltage output of the thermocouple in microvolts
+ 493:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *
+ 494:Generated_Source\PSoC4/ThermocoupleCalculator.c **** *******************************************************************************/
+ 495:Generated_Source\PSoC4/ThermocoupleCalculator.c **** int32 ThermocoupleCalculator_GetVoltage(int32 temperature) 
+ 496:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 497:Generated_Source\PSoC4/ThermocoupleCalculator.c **** #if (CY_PSOC3)
+ 498:Generated_Source\PSoC4/ThermocoupleCalculator.c **** {
+ 499:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 500:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     /***************************************
+ 501:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     *  Customizer Generated Coefficients
+ 502:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     ***************************************/
+ 503:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     const int32 CYCODE ThermocoupleCalculator_coeffTV[9] = {0, 
+ 504:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                         413735, 
+ 505:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                         83372, 
+ 506:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                         -137607, 
+ 507:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                         1089544, 
+ 508:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                         -9978037, 
+ 509:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                         43567176, 
+ 510:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                         -95708775, 
+ 511:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                         84037362};
+ 512:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 513:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     /* Variable to store calculated voltage */
+ 514:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     uint8 i=0u;
+ 515:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     float32 voltage=0.0f;
+ 516:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     float32 temperatureNorm=0.0f;
+ 517:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 518:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     temperatureNorm  = (float32)temperature;
+ 519:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 520:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     for (i = ThermocoupleCalculator_ORDER_TV - 1u; i > 0u; i--)
+ 521:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     {
+ 522:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         voltage = (ThermocoupleCalculator_coeffTV[i] + voltage) * temperatureNorm;
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 16
+
+
+ 523:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     }
+ 524:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     voltage = (voltage + ThermocoupleCalculator_coeffTV[ThermocoupleCalculator_FIRST_EL_MAS]);
+ 525:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 526:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     return ((int32) (voltage));
+ 527:Generated_Source\PSoC4/ThermocoupleCalculator.c **** }
+ 528:Generated_Source\PSoC4/ThermocoupleCalculator.c **** #else
+ 529:Generated_Source\PSoC4/ThermocoupleCalculator.c **** {
+ 325              		.loc 1 529 0
+ 326              		.cfi_startproc
+ 327              		@ args = 0, pretend = 0, frame = 40
+ 328              		@ frame_needed = 0, uses_anonymous_args = 0
+ 329              	.LVL57:
+ 330 0000 30B5     		push	{r4, r5, lr}
+ 331              		.cfi_def_cfa_offset 12
+ 332              		.cfi_offset 4, -12
+ 333              		.cfi_offset 5, -8
+ 334              		.cfi_offset 14, -4
+ 335 0002 8BB0     		sub	sp, sp, #44
+ 336              		.cfi_def_cfa_offset 56
+ 530:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 531:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     /***************************************
+ 532:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     *  Customizer Generated Coefficients
+ 533:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     ***************************************/
+ 534:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     const int32 CYCODE ThermocoupleCalculator_coeffTV[9] = {0, 
+ 337              		.loc 1 534 0
+ 338 0004 01A9     		add	r1, sp, #4
+ 339 0006 0A00     		movs	r2, r1
+ 340 0008 114B     		ldr	r3, .L28
+ 341 000a 4833     		adds	r3, r3, #72
+ 342 000c 32CB     		ldmia	r3!, {r1, r4, r5}
+ 343 000e 32C2     		stmia	r2!, {r1, r4, r5}
+ 344 0010 32CB     		ldmia	r3!, {r1, r4, r5}
+ 345 0012 32C2     		stmia	r2!, {r1, r4, r5}
+ 346 0014 32CB     		ldmia	r3!, {r1, r4, r5}
+ 347 0016 32C2     		stmia	r2!, {r1, r4, r5}
+ 348              	.LVL58:
+ 535:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                         413735, 
+ 536:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                         83372, 
+ 537:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                         -137607, 
+ 538:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                         1089544, 
+ 539:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                         -9978037, 
+ 540:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                         43567176, 
+ 541:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                         -95708775, 
+ 542:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                                         84037362};
+ 543:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 544:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     /* Variable to store calculated voltage */
+ 545:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     uint8 i=0u;
+ 546:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     int32 voltage=0;
+ 547:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 548:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     if (temperature < 0)
+ 349              		.loc 1 548 0
+ 350 0018 0028     		cmp	r0, #0
+ 351 001a 03DA     		bge	.L24
+ 549:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     {
+ 550:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         temperature = -temperature;
+ 352              		.loc 1 550 0
+ 353 001c 4542     		rsbs	r5, r0, #0
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 17
+
+
+ 354              	.LVL59:
+ 551:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         temperature = (int32)((uint64)((uint64)temperature << 
+ 355              		.loc 1 551 0
+ 356 001e 6D02     		lsls	r5, r5, #9
+ 357              	.LVL60:
+ 552:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                        (ThermocoupleCalculator_IN_NORMALIZATION_TV - ThermocoupleCa
+ 553:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         temperature = -temperature;
+ 358              		.loc 1 553 0
+ 359 0020 6D42     		rsbs	r5, r5, #0
+ 360              	.LVL61:
+ 361 0022 00E0     		b	.L25
+ 362              	.LVL62:
+ 363              	.L24:
+ 554:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     }
+ 555:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     else
+ 556:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     {
+ 557:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         temperature = (int32)((uint64)((uint64)temperature << 
+ 364              		.loc 1 557 0
+ 365 0024 4502     		lsls	r5, r0, #9
+ 366              	.LVL63:
+ 367              	.L25:
+ 546:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 368              		.loc 1 546 0
+ 369 0026 0020     		movs	r0, #0
+ 558:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                        (ThermocoupleCalculator_IN_NORMALIZATION_TV - ThermocoupleCa
+ 559:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     }
+ 560:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     
+ 561:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     for (i = ThermocoupleCalculator_ORDER_TV - 1u; i > 0u; i--)
+ 370              		.loc 1 561 0
+ 371 0028 0824     		movs	r4, #8
+ 372 002a 08E0     		b	.L26
+ 373              	.LVL64:
+ 374              	.L27:
+ 562:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     {
+ 563:Generated_Source\PSoC4/ThermocoupleCalculator.c ****         voltage = ThermocoupleCalculator_MultShift24((ThermocoupleCalculator_coeffTV[i] + voltage),
+ 375              		.loc 1 563 0 discriminator 3
+ 376 002c A200     		lsls	r2, r4, #2
+ 377 002e 01AB     		add	r3, sp, #4
+ 378 0030 D358     		ldr	r3, [r2, r3]
+ 379 0032 C018     		adds	r0, r0, r3
+ 380              	.LVL65:
+ 381 0034 2900     		movs	r1, r5
+ 382 0036 FFF7FEFF 		bl	ThermocoupleCalculator_MultShift24
+ 383              	.LVL66:
+ 561:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     {
+ 384              		.loc 1 561 0 discriminator 3
+ 385 003a 013C     		subs	r4, r4, #1
+ 386              	.LVL67:
+ 387 003c E4B2     		uxtb	r4, r4
+ 388              	.LVL68:
+ 389              	.L26:
+ 561:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     {
+ 390              		.loc 1 561 0 is_stmt 0 discriminator 1
+ 391 003e 002C     		cmp	r4, #0
+ 392 0040 F4D1     		bne	.L27
+ 564:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     }
+ 565:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 18
+
+
+ 566:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     voltage = (int32)((uint32)((uint64)(int32)(voltage + ThermocoupleCalculator_coeffTV[Thermocoupl
+ 393              		.loc 1 566 0 is_stmt 1
+ 394 0042 C317     		asrs	r3, r0, #31
+ 395 0044 DB06     		lsls	r3, r3, #27
+ 396 0046 4009     		lsrs	r0, r0, #5
+ 397              	.LVL69:
+ 398 0048 1843     		orrs	r0, r3
+ 399              	.LVL70:
+ 567:Generated_Source\PSoC4/ThermocoupleCalculator.c ****                                         ThermocoupleCalculator_COEF_SCALE_TV));
+ 568:Generated_Source\PSoC4/ThermocoupleCalculator.c **** 
+ 569:Generated_Source\PSoC4/ThermocoupleCalculator.c ****     return (voltage);
+ 570:Generated_Source\PSoC4/ThermocoupleCalculator.c **** }
+ 400              		.loc 1 570 0
+ 401 004a 0BB0     		add	sp, sp, #44
+ 402              		@ sp needed
+ 403              	.LVL71:
+ 404              	.LVL72:
+ 405 004c 30BD     		pop	{r4, r5, pc}
+ 406              	.L29:
+ 407 004e C046     		.align	2
+ 408              	.L28:
+ 409 0050 00000000 		.word	.LANCHOR0
+ 410              		.cfi_endproc
+ 411              	.LFE4:
+ 412              		.size	ThermocoupleCalculator_GetVoltage, .-ThermocoupleCalculator_GetVoltage
+ 413              		.section	.rodata
+ 414              		.align	2
+ 415              		.set	.LANCHOR0,. + 0
+ 416              	.LC0:
+ 417 0000 294D0A00 		.word	675113
+ 418 0004 A5A20800 		.word	565925
+ 419 0008 C7A52DFF 		.word	-13785657
+ 420 000c 2E925A15 		.word	358257198
+ 421 0010 A1896013 		.word	325093793
+ 422 0014 3BC2BE0E 		.word	247382587
+ 423 0018 C4121D05 		.word	85791428
+ 424 001c BB0963FF 		.word	-10286661
+ 425 0020 410F42F5 		.word	-180220095
+ 426 0024 66FCF10F 		.word	267517030
+ 427 0028 EBD37904 		.word	75092971
+ 428 002c E873170A 		.word	169309160
+ 429 0030 5C6E570E 		.word	240610908
+ 430 0034 F513FFF9 		.word	-100723723
+ 431 0038 4D6E84FB 		.word	-75207091
+ 432 003c 54085505 		.word	89458772
+ 433 0040 44993F02 		.word	37722436
+ 434 0044 E217D300 		.word	13834210
+ 435              	.LC1:
+ 436 0048 00000000 		.word	0
+ 437 004c 27500600 		.word	413735
+ 438 0050 AC450100 		.word	83372
+ 439 0054 79E6FDFF 		.word	-137607
+ 440 0058 08A01000 		.word	1089544
+ 441 005c 4BBF67FF 		.word	-9978037
+ 442 0060 48C89802 		.word	43567176
+ 443 0064 99994BFA 		.word	-95708775
+ 444 0068 F24E0205 		.word	84037362
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 19
+
+
+ 445              		.text
+ 446              	.Letext0:
+ 447              		.file 2 "Generated_Source\\PSoC4\\cytypes.h"
+ 448              		.section	.debug_info,"",%progbits
+ 449              	.Ldebug_info0:
+ 450 0000 CC020000 		.4byte	0x2cc
+ 451 0004 0400     		.2byte	0x4
+ 452 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 453 000a 04       		.byte	0x4
+ 454 000b 01       		.uleb128 0x1
+ 455 000c BF010000 		.4byte	.LASF31
+ 456 0010 0C       		.byte	0xc
+ 457 0011 8C020000 		.4byte	.LASF32
+ 458 0015 08000000 		.4byte	.LASF33
+ 459 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 460 001d 00000000 		.4byte	0
+ 461 0021 00000000 		.4byte	.Ldebug_line0
+ 462 0025 02       		.uleb128 0x2
+ 463 0026 08       		.byte	0x8
+ 464 0027 07       		.byte	0x7
+ 465 0028 A1010000 		.4byte	.LASF0
+ 466 002c 02       		.uleb128 0x2
+ 467 002d 01       		.byte	0x1
+ 468 002e 06       		.byte	0x6
+ 469 002f DC020000 		.4byte	.LASF1
+ 470 0033 02       		.uleb128 0x2
+ 471 0034 01       		.byte	0x1
+ 472 0035 08       		.byte	0x8
+ 473 0036 E5000000 		.4byte	.LASF2
+ 474 003a 02       		.uleb128 0x2
+ 475 003b 02       		.byte	0x2
+ 476 003c 05       		.byte	0x5
+ 477 003d 7E010000 		.4byte	.LASF3
+ 478 0041 02       		.uleb128 0x2
+ 479 0042 02       		.byte	0x2
+ 480 0043 07       		.byte	0x7
+ 481 0044 A3000000 		.4byte	.LASF4
+ 482 0048 02       		.uleb128 0x2
+ 483 0049 04       		.byte	0x4
+ 484 004a 05       		.byte	0x5
+ 485 004b C2020000 		.4byte	.LASF5
+ 486 004f 02       		.uleb128 0x2
+ 487 0050 04       		.byte	0x4
+ 488 0051 07       		.byte	0x7
+ 489 0052 19010000 		.4byte	.LASF6
+ 490 0056 02       		.uleb128 0x2
+ 491 0057 08       		.byte	0x8
+ 492 0058 05       		.byte	0x5
+ 493 0059 56020000 		.4byte	.LASF7
+ 494 005d 03       		.uleb128 0x3
+ 495 005e 04       		.byte	0x4
+ 496 005f 05       		.byte	0x5
+ 497 0060 696E7400 		.ascii	"int\000"
+ 498 0064 02       		.uleb128 0x2
+ 499 0065 04       		.byte	0x4
+ 500 0066 07       		.byte	0x7
+ 501 0067 94010000 		.4byte	.LASF8
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 20
+
+
+ 502 006b 04       		.uleb128 0x4
+ 503 006c BC020000 		.4byte	.LASF9
+ 504 0070 02       		.byte	0x2
+ 505 0071 FB01     		.2byte	0x1fb
+ 506 0073 33000000 		.4byte	0x33
+ 507 0077 04       		.uleb128 0x4
+ 508 0078 8D010000 		.4byte	.LASF10
+ 509 007c 02       		.byte	0x2
+ 510 007d FD01     		.2byte	0x1fd
+ 511 007f 4F000000 		.4byte	0x4f
+ 512 0083 04       		.uleb128 0x4
+ 513 0084 88010000 		.4byte	.LASF11
+ 514 0088 02       		.byte	0x2
+ 515 0089 FE01     		.2byte	0x1fe
+ 516 008b 2C000000 		.4byte	0x2c
+ 517 008f 04       		.uleb128 0x4
+ 518 0090 30010000 		.4byte	.LASF12
+ 519 0094 02       		.byte	0x2
+ 520 0095 0002     		.2byte	0x200
+ 521 0097 48000000 		.4byte	0x48
+ 522 009b 02       		.uleb128 0x2
+ 523 009c 04       		.byte	0x4
+ 524 009d 04       		.byte	0x4
+ 525 009e 53000000 		.4byte	.LASF13
+ 526 00a2 02       		.uleb128 0x2
+ 527 00a3 08       		.byte	0x8
+ 528 00a4 04       		.byte	0x4
+ 529 00a5 77010000 		.4byte	.LASF14
+ 530 00a9 04       		.uleb128 0x4
+ 531 00aa 07030000 		.4byte	.LASF15
+ 532 00ae 02       		.byte	0x2
+ 533 00af 0602     		.2byte	0x206
+ 534 00b1 56000000 		.4byte	0x56
+ 535 00b5 04       		.uleb128 0x4
+ 536 00b6 9C000000 		.4byte	.LASF16
+ 537 00ba 02       		.byte	0x2
+ 538 00bb 0702     		.2byte	0x207
+ 539 00bd 25000000 		.4byte	0x25
+ 540 00c1 02       		.uleb128 0x2
+ 541 00c2 01       		.byte	0x1
+ 542 00c3 08       		.byte	0x8
+ 543 00c4 CB020000 		.4byte	.LASF17
+ 544 00c8 02       		.uleb128 0x2
+ 545 00c9 08       		.byte	0x8
+ 546 00ca 04       		.byte	0x4
+ 547 00cb D0020000 		.4byte	.LASF18
+ 548 00cf 02       		.uleb128 0x2
+ 549 00d0 04       		.byte	0x4
+ 550 00d1 07       		.byte	0x7
+ 551 00d2 4D020000 		.4byte	.LASF19
+ 552 00d6 05       		.uleb128 0x5
+ 553 00d7 C2000000 		.4byte	.LASF20
+ 554 00db 01       		.byte	0x1
+ 555 00dc 27       		.byte	0x27
+ 556 00dd 8F000000 		.4byte	0x8f
+ 557 00e1 00000000 		.4byte	.LFB2
+ 558 00e5 34000000 		.4byte	.LFE2-.LFB2
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 21
+
+
+ 559 00e9 01       		.uleb128 0x1
+ 560 00ea 9C       		.byte	0x9c
+ 561 00eb 1D010000 		.4byte	0x11d
+ 562 00ef 06       		.uleb128 0x6
+ 563 00f0 6F703100 		.ascii	"op1\000"
+ 564 00f4 01       		.byte	0x1
+ 565 00f5 27       		.byte	0x27
+ 566 00f6 8F000000 		.4byte	0x8f
+ 567 00fa 00000000 		.4byte	.LLST0
+ 568 00fe 06       		.uleb128 0x6
+ 569 00ff 6F703200 		.ascii	"op2\000"
+ 570 0103 01       		.byte	0x1
+ 571 0104 27       		.byte	0x27
+ 572 0105 8F000000 		.4byte	0x8f
+ 573 0109 21000000 		.4byte	.LLST1
+ 574 010d 07       		.uleb128 0x7
+ 575 010e B8010000 		.4byte	.LASF23
+ 576 0112 01       		.byte	0x1
+ 577 0113 29       		.byte	0x29
+ 578 0114 A9000000 		.4byte	0xa9
+ 579 0118 4D000000 		.4byte	.LLST2
+ 580 011c 00       		.byte	0
+ 581 011d 08       		.uleb128 0x8
+ 582 011e F3000000 		.4byte	.LASF21
+ 583 0122 01       		.byte	0x1
+ 584 0123 4C       		.byte	0x4c
+ 585 0124 8F000000 		.4byte	0x8f
+ 586 0128 00000000 		.4byte	.LFB3
+ 587 012c E4000000 		.4byte	.LFE3-.LFB3
+ 588 0130 01       		.uleb128 0x1
+ 589 0131 9C       		.byte	0x9c
+ 590 0132 F5010000 		.4byte	0x1f5
+ 591 0136 09       		.uleb128 0x9
+ 592 0137 00000000 		.4byte	.LASF22
+ 593 013b 01       		.byte	0x1
+ 594 013c 4C       		.byte	0x4c
+ 595 013d 8F000000 		.4byte	0x8f
+ 596 0141 B8000000 		.4byte	.LLST3
+ 597 0145 0A       		.uleb128 0xa
+ 598 0146 36010000 		.4byte	.LASF24
+ 599 014a 01       		.byte	0x1
+ 600 014b B8       		.byte	0xb8
+ 601 014c 10020000 		.4byte	0x210
+ 602 0150 03       		.uleb128 0x3
+ 603 0151 91       		.byte	0x91
+ 604 0152 A87F     		.sleb128 -88
+ 605 0154 0B       		.uleb128 0xb
+ 606 0155 6B020000 		.4byte	.LASF34
+ 607 0159 01       		.byte	0x1
+ 608 015a BF       		.byte	0xbf
+ 609 015b 25020000 		.4byte	0x225
+ 610 015f 0C       		.uleb128 0xc
+ 611 0160 59000000 		.4byte	.LASF25
+ 612 0164 01       		.byte	0x1
+ 613 0165 C1       		.byte	0xc1
+ 614 0166 3F020000 		.4byte	0x23f
+ 615 016a 03       		.byte	0x3
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 22
+
+
+ 616 016b 0C       		.byte	0xc
+ 617 016c 0E       		.byte	0xe
+ 618 016d 0F       		.byte	0xf
+ 619 016e 0C       		.uleb128 0xc
+ 620 016f 79000000 		.4byte	.LASF26
+ 621 0173 01       		.byte	0x1
+ 622 0174 C2       		.byte	0xc2
+ 623 0175 44020000 		.4byte	0x244
+ 624 0179 03       		.byte	0x3
+ 625 017a 0F       		.byte	0xf
+ 626 017b 0D       		.byte	0xd
+ 627 017c 0B       		.byte	0xb
+ 628 017d 07       		.uleb128 0x7
+ 629 017e 2B010000 		.4byte	.LASF27
+ 630 0182 01       		.byte	0x1
+ 631 0183 C5       		.byte	0xc5
+ 632 0184 8F000000 		.4byte	0x8f
+ 633 0188 4F010000 		.4byte	.LLST4
+ 634 018c 0D       		.uleb128 0xd
+ 635 018d 6900     		.ascii	"i\000"
+ 636 018f 01       		.byte	0x1
+ 637 0190 C6       		.byte	0xc6
+ 638 0191 6B000000 		.4byte	0x6b
+ 639 0195 0C020000 		.4byte	.LLST5
+ 640 0199 0E       		.uleb128 0xe
+ 641 019a 10000000 		.4byte	.LVL13
+ 642 019e C6020000 		.4byte	0x2c6
+ 643 01a2 BC010000 		.4byte	0x1bc
+ 644 01a6 0F       		.uleb128 0xf
+ 645 01a7 01       		.uleb128 0x1
+ 646 01a8 50       		.byte	0x50
+ 647 01a9 02       		.uleb128 0x2
+ 648 01aa 7D       		.byte	0x7d
+ 649 01ab 00       		.sleb128 0
+ 650 01ac 0F       		.uleb128 0xf
+ 651 01ad 01       		.uleb128 0x1
+ 652 01ae 51       		.byte	0x51
+ 653 01af 05       		.uleb128 0x5
+ 654 01b0 03       		.byte	0x3
+ 655 01b1 00000000 		.4byte	.LANCHOR0
+ 656 01b5 0F       		.uleb128 0xf
+ 657 01b6 01       		.uleb128 0x1
+ 658 01b7 52       		.byte	0x52
+ 659 01b8 02       		.uleb128 0x2
+ 660 01b9 08       		.byte	0x8
+ 661 01ba 48       		.byte	0x48
+ 662 01bb 00       		.byte	0
+ 663 01bc 0E       		.uleb128 0xe
+ 664 01bd 38000000 		.4byte	.LVL21
+ 665 01c1 D6000000 		.4byte	0xd6
+ 666 01c5 D0010000 		.4byte	0x1d0
+ 667 01c9 0F       		.uleb128 0xf
+ 668 01ca 01       		.uleb128 0x1
+ 669 01cb 51       		.byte	0x51
+ 670 01cc 02       		.uleb128 0x2
+ 671 01cd 75       		.byte	0x75
+ 672 01ce 00       		.sleb128 0
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 23
+
+
+ 673 01cf 00       		.byte	0
+ 674 01d0 0E       		.uleb128 0xe
+ 675 01d1 7A000000 		.4byte	.LVL35
+ 676 01d5 D6000000 		.4byte	0xd6
+ 677 01d9 E4010000 		.4byte	0x1e4
+ 678 01dd 0F       		.uleb128 0xf
+ 679 01de 01       		.uleb128 0x1
+ 680 01df 51       		.byte	0x51
+ 681 01e0 02       		.uleb128 0x2
+ 682 01e1 75       		.byte	0x75
+ 683 01e2 00       		.sleb128 0
+ 684 01e3 00       		.byte	0
+ 685 01e4 10       		.uleb128 0x10
+ 686 01e5 B6000000 		.4byte	.LVL49
+ 687 01e9 D6000000 		.4byte	0xd6
+ 688 01ed 0F       		.uleb128 0xf
+ 689 01ee 01       		.uleb128 0x1
+ 690 01ef 51       		.byte	0x51
+ 691 01f0 02       		.uleb128 0x2
+ 692 01f1 75       		.byte	0x75
+ 693 01f2 00       		.sleb128 0
+ 694 01f3 00       		.byte	0
+ 695 01f4 00       		.byte	0
+ 696 01f5 11       		.uleb128 0x11
+ 697 01f6 0B020000 		.4byte	0x20b
+ 698 01fa 0B020000 		.4byte	0x20b
+ 699 01fe 12       		.uleb128 0x12
+ 700 01ff CF000000 		.4byte	0xcf
+ 701 0203 05       		.byte	0x5
+ 702 0204 12       		.uleb128 0x12
+ 703 0205 CF000000 		.4byte	0xcf
+ 704 0209 02       		.byte	0x2
+ 705 020a 00       		.byte	0
+ 706 020b 13       		.uleb128 0x13
+ 707 020c 8F000000 		.4byte	0x8f
+ 708 0210 13       		.uleb128 0x13
+ 709 0211 F5010000 		.4byte	0x1f5
+ 710 0215 11       		.uleb128 0x11
+ 711 0216 0B020000 		.4byte	0x20b
+ 712 021a 25020000 		.4byte	0x225
+ 713 021e 12       		.uleb128 0x12
+ 714 021f CF000000 		.4byte	0xcf
+ 715 0223 01       		.byte	0x1
+ 716 0224 00       		.byte	0
+ 717 0225 13       		.uleb128 0x13
+ 718 0226 15020000 		.4byte	0x215
+ 719 022a 11       		.uleb128 0x11
+ 720 022b 3A020000 		.4byte	0x23a
+ 721 022f 3A020000 		.4byte	0x23a
+ 722 0233 12       		.uleb128 0x12
+ 723 0234 CF000000 		.4byte	0xcf
+ 724 0238 02       		.byte	0x2
+ 725 0239 00       		.byte	0
+ 726 023a 13       		.uleb128 0x13
+ 727 023b 83000000 		.4byte	0x83
+ 728 023f 13       		.uleb128 0x13
+ 729 0240 2A020000 		.4byte	0x22a
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 24
+
+
+ 730 0244 13       		.uleb128 0x13
+ 731 0245 2A020000 		.4byte	0x22a
+ 732 0249 14       		.uleb128 0x14
+ 733 024a 55010000 		.4byte	.LASF28
+ 734 024e 01       		.byte	0x1
+ 735 024f EF01     		.2byte	0x1ef
+ 736 0251 8F000000 		.4byte	0x8f
+ 737 0255 00000000 		.4byte	.LFB4
+ 738 0259 54000000 		.4byte	.LFE4-.LFB4
+ 739 025d 01       		.uleb128 0x1
+ 740 025e 9C       		.byte	0x9c
+ 741 025f B1020000 		.4byte	0x2b1
+ 742 0263 15       		.uleb128 0x15
+ 743 0264 B6000000 		.4byte	.LASF29
+ 744 0268 01       		.byte	0x1
+ 745 0269 EF01     		.2byte	0x1ef
+ 746 026b 8F000000 		.4byte	0x8f
+ 747 026f 9E020000 		.4byte	.LLST6
+ 748 0273 16       		.uleb128 0x16
+ 749 0274 E8020000 		.4byte	.LASF30
+ 750 0278 01       		.byte	0x1
+ 751 0279 1602     		.2byte	0x216
+ 752 027b C1020000 		.4byte	0x2c1
+ 753 027f 02       		.uleb128 0x2
+ 754 0280 91       		.byte	0x91
+ 755 0281 4C       		.sleb128 -52
+ 756 0282 17       		.uleb128 0x17
+ 757 0283 6900     		.ascii	"i\000"
+ 758 0285 01       		.byte	0x1
+ 759 0286 2102     		.2byte	0x221
+ 760 0288 6B000000 		.4byte	0x6b
+ 761 028c D2020000 		.4byte	.LLST7
+ 762 0290 18       		.uleb128 0x18
+ 763 0291 00000000 		.4byte	.LASF22
+ 764 0295 01       		.byte	0x1
+ 765 0296 2202     		.2byte	0x222
+ 766 0298 8F000000 		.4byte	0x8f
+ 767 029c 08030000 		.4byte	.LLST8
+ 768 02a0 10       		.uleb128 0x10
+ 769 02a1 3A000000 		.4byte	.LVL66
+ 770 02a5 D6000000 		.4byte	0xd6
+ 771 02a9 0F       		.uleb128 0xf
+ 772 02aa 01       		.uleb128 0x1
+ 773 02ab 51       		.byte	0x51
+ 774 02ac 02       		.uleb128 0x2
+ 775 02ad 75       		.byte	0x75
+ 776 02ae 00       		.sleb128 0
+ 777 02af 00       		.byte	0
+ 778 02b0 00       		.byte	0
+ 779 02b1 11       		.uleb128 0x11
+ 780 02b2 0B020000 		.4byte	0x20b
+ 781 02b6 C1020000 		.4byte	0x2c1
+ 782 02ba 12       		.uleb128 0x12
+ 783 02bb CF000000 		.4byte	0xcf
+ 784 02bf 08       		.byte	0x8
+ 785 02c0 00       		.byte	0
+ 786 02c1 13       		.uleb128 0x13
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 25
+
+
+ 787 02c2 B1020000 		.4byte	0x2b1
+ 788 02c6 19       		.uleb128 0x19
+ 789 02c7 64020000 		.4byte	.LASF35
+ 790 02cb 64020000 		.4byte	.LASF35
+ 791 02cf 00       		.byte	0
+ 792              		.section	.debug_abbrev,"",%progbits
+ 793              	.Ldebug_abbrev0:
+ 794 0000 01       		.uleb128 0x1
+ 795 0001 11       		.uleb128 0x11
+ 796 0002 01       		.byte	0x1
+ 797 0003 25       		.uleb128 0x25
+ 798 0004 0E       		.uleb128 0xe
+ 799 0005 13       		.uleb128 0x13
+ 800 0006 0B       		.uleb128 0xb
+ 801 0007 03       		.uleb128 0x3
+ 802 0008 0E       		.uleb128 0xe
+ 803 0009 1B       		.uleb128 0x1b
+ 804 000a 0E       		.uleb128 0xe
+ 805 000b 55       		.uleb128 0x55
+ 806 000c 17       		.uleb128 0x17
+ 807 000d 11       		.uleb128 0x11
+ 808 000e 01       		.uleb128 0x1
+ 809 000f 10       		.uleb128 0x10
+ 810 0010 17       		.uleb128 0x17
+ 811 0011 00       		.byte	0
+ 812 0012 00       		.byte	0
+ 813 0013 02       		.uleb128 0x2
+ 814 0014 24       		.uleb128 0x24
+ 815 0015 00       		.byte	0
+ 816 0016 0B       		.uleb128 0xb
+ 817 0017 0B       		.uleb128 0xb
+ 818 0018 3E       		.uleb128 0x3e
+ 819 0019 0B       		.uleb128 0xb
+ 820 001a 03       		.uleb128 0x3
+ 821 001b 0E       		.uleb128 0xe
+ 822 001c 00       		.byte	0
+ 823 001d 00       		.byte	0
+ 824 001e 03       		.uleb128 0x3
+ 825 001f 24       		.uleb128 0x24
+ 826 0020 00       		.byte	0
+ 827 0021 0B       		.uleb128 0xb
+ 828 0022 0B       		.uleb128 0xb
+ 829 0023 3E       		.uleb128 0x3e
+ 830 0024 0B       		.uleb128 0xb
+ 831 0025 03       		.uleb128 0x3
+ 832 0026 08       		.uleb128 0x8
+ 833 0027 00       		.byte	0
+ 834 0028 00       		.byte	0
+ 835 0029 04       		.uleb128 0x4
+ 836 002a 16       		.uleb128 0x16
+ 837 002b 00       		.byte	0
+ 838 002c 03       		.uleb128 0x3
+ 839 002d 0E       		.uleb128 0xe
+ 840 002e 3A       		.uleb128 0x3a
+ 841 002f 0B       		.uleb128 0xb
+ 842 0030 3B       		.uleb128 0x3b
+ 843 0031 05       		.uleb128 0x5
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 26
+
+
+ 844 0032 49       		.uleb128 0x49
+ 845 0033 13       		.uleb128 0x13
+ 846 0034 00       		.byte	0
+ 847 0035 00       		.byte	0
+ 848 0036 05       		.uleb128 0x5
+ 849 0037 2E       		.uleb128 0x2e
+ 850 0038 01       		.byte	0x1
+ 851 0039 3F       		.uleb128 0x3f
+ 852 003a 19       		.uleb128 0x19
+ 853 003b 03       		.uleb128 0x3
+ 854 003c 0E       		.uleb128 0xe
+ 855 003d 3A       		.uleb128 0x3a
+ 856 003e 0B       		.uleb128 0xb
+ 857 003f 3B       		.uleb128 0x3b
+ 858 0040 0B       		.uleb128 0xb
+ 859 0041 27       		.uleb128 0x27
+ 860 0042 19       		.uleb128 0x19
+ 861 0043 49       		.uleb128 0x49
+ 862 0044 13       		.uleb128 0x13
+ 863 0045 11       		.uleb128 0x11
+ 864 0046 01       		.uleb128 0x1
+ 865 0047 12       		.uleb128 0x12
+ 866 0048 06       		.uleb128 0x6
+ 867 0049 40       		.uleb128 0x40
+ 868 004a 18       		.uleb128 0x18
+ 869 004b 9642     		.uleb128 0x2116
+ 870 004d 19       		.uleb128 0x19
+ 871 004e 01       		.uleb128 0x1
+ 872 004f 13       		.uleb128 0x13
+ 873 0050 00       		.byte	0
+ 874 0051 00       		.byte	0
+ 875 0052 06       		.uleb128 0x6
+ 876 0053 05       		.uleb128 0x5
+ 877 0054 00       		.byte	0
+ 878 0055 03       		.uleb128 0x3
+ 879 0056 08       		.uleb128 0x8
+ 880 0057 3A       		.uleb128 0x3a
+ 881 0058 0B       		.uleb128 0xb
+ 882 0059 3B       		.uleb128 0x3b
+ 883 005a 0B       		.uleb128 0xb
+ 884 005b 49       		.uleb128 0x49
+ 885 005c 13       		.uleb128 0x13
+ 886 005d 02       		.uleb128 0x2
+ 887 005e 17       		.uleb128 0x17
+ 888 005f 00       		.byte	0
+ 889 0060 00       		.byte	0
+ 890 0061 07       		.uleb128 0x7
+ 891 0062 34       		.uleb128 0x34
+ 892 0063 00       		.byte	0
+ 893 0064 03       		.uleb128 0x3
+ 894 0065 0E       		.uleb128 0xe
+ 895 0066 3A       		.uleb128 0x3a
+ 896 0067 0B       		.uleb128 0xb
+ 897 0068 3B       		.uleb128 0x3b
+ 898 0069 0B       		.uleb128 0xb
+ 899 006a 49       		.uleb128 0x49
+ 900 006b 13       		.uleb128 0x13
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 27
+
+
+ 901 006c 02       		.uleb128 0x2
+ 902 006d 17       		.uleb128 0x17
+ 903 006e 00       		.byte	0
+ 904 006f 00       		.byte	0
+ 905 0070 08       		.uleb128 0x8
+ 906 0071 2E       		.uleb128 0x2e
+ 907 0072 01       		.byte	0x1
+ 908 0073 3F       		.uleb128 0x3f
+ 909 0074 19       		.uleb128 0x19
+ 910 0075 03       		.uleb128 0x3
+ 911 0076 0E       		.uleb128 0xe
+ 912 0077 3A       		.uleb128 0x3a
+ 913 0078 0B       		.uleb128 0xb
+ 914 0079 3B       		.uleb128 0x3b
+ 915 007a 0B       		.uleb128 0xb
+ 916 007b 27       		.uleb128 0x27
+ 917 007c 19       		.uleb128 0x19
+ 918 007d 49       		.uleb128 0x49
+ 919 007e 13       		.uleb128 0x13
+ 920 007f 11       		.uleb128 0x11
+ 921 0080 01       		.uleb128 0x1
+ 922 0081 12       		.uleb128 0x12
+ 923 0082 06       		.uleb128 0x6
+ 924 0083 40       		.uleb128 0x40
+ 925 0084 18       		.uleb128 0x18
+ 926 0085 9742     		.uleb128 0x2117
+ 927 0087 19       		.uleb128 0x19
+ 928 0088 01       		.uleb128 0x1
+ 929 0089 13       		.uleb128 0x13
+ 930 008a 00       		.byte	0
+ 931 008b 00       		.byte	0
+ 932 008c 09       		.uleb128 0x9
+ 933 008d 05       		.uleb128 0x5
+ 934 008e 00       		.byte	0
+ 935 008f 03       		.uleb128 0x3
+ 936 0090 0E       		.uleb128 0xe
+ 937 0091 3A       		.uleb128 0x3a
+ 938 0092 0B       		.uleb128 0xb
+ 939 0093 3B       		.uleb128 0x3b
+ 940 0094 0B       		.uleb128 0xb
+ 941 0095 49       		.uleb128 0x49
+ 942 0096 13       		.uleb128 0x13
+ 943 0097 02       		.uleb128 0x2
+ 944 0098 17       		.uleb128 0x17
+ 945 0099 00       		.byte	0
+ 946 009a 00       		.byte	0
+ 947 009b 0A       		.uleb128 0xa
+ 948 009c 34       		.uleb128 0x34
+ 949 009d 00       		.byte	0
+ 950 009e 03       		.uleb128 0x3
+ 951 009f 0E       		.uleb128 0xe
+ 952 00a0 3A       		.uleb128 0x3a
+ 953 00a1 0B       		.uleb128 0xb
+ 954 00a2 3B       		.uleb128 0x3b
+ 955 00a3 0B       		.uleb128 0xb
+ 956 00a4 49       		.uleb128 0x49
+ 957 00a5 13       		.uleb128 0x13
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 28
+
+
+ 958 00a6 02       		.uleb128 0x2
+ 959 00a7 18       		.uleb128 0x18
+ 960 00a8 00       		.byte	0
+ 961 00a9 00       		.byte	0
+ 962 00aa 0B       		.uleb128 0xb
+ 963 00ab 34       		.uleb128 0x34
+ 964 00ac 00       		.byte	0
+ 965 00ad 03       		.uleb128 0x3
+ 966 00ae 0E       		.uleb128 0xe
+ 967 00af 3A       		.uleb128 0x3a
+ 968 00b0 0B       		.uleb128 0xb
+ 969 00b1 3B       		.uleb128 0x3b
+ 970 00b2 0B       		.uleb128 0xb
+ 971 00b3 49       		.uleb128 0x49
+ 972 00b4 13       		.uleb128 0x13
+ 973 00b5 00       		.byte	0
+ 974 00b6 00       		.byte	0
+ 975 00b7 0C       		.uleb128 0xc
+ 976 00b8 34       		.uleb128 0x34
+ 977 00b9 00       		.byte	0
+ 978 00ba 03       		.uleb128 0x3
+ 979 00bb 0E       		.uleb128 0xe
+ 980 00bc 3A       		.uleb128 0x3a
+ 981 00bd 0B       		.uleb128 0xb
+ 982 00be 3B       		.uleb128 0x3b
+ 983 00bf 0B       		.uleb128 0xb
+ 984 00c0 49       		.uleb128 0x49
+ 985 00c1 13       		.uleb128 0x13
+ 986 00c2 1C       		.uleb128 0x1c
+ 987 00c3 0A       		.uleb128 0xa
+ 988 00c4 00       		.byte	0
+ 989 00c5 00       		.byte	0
+ 990 00c6 0D       		.uleb128 0xd
+ 991 00c7 34       		.uleb128 0x34
+ 992 00c8 00       		.byte	0
+ 993 00c9 03       		.uleb128 0x3
+ 994 00ca 08       		.uleb128 0x8
+ 995 00cb 3A       		.uleb128 0x3a
+ 996 00cc 0B       		.uleb128 0xb
+ 997 00cd 3B       		.uleb128 0x3b
+ 998 00ce 0B       		.uleb128 0xb
+ 999 00cf 49       		.uleb128 0x49
+ 1000 00d0 13       		.uleb128 0x13
+ 1001 00d1 02       		.uleb128 0x2
+ 1002 00d2 17       		.uleb128 0x17
+ 1003 00d3 00       		.byte	0
+ 1004 00d4 00       		.byte	0
+ 1005 00d5 0E       		.uleb128 0xe
+ 1006 00d6 898201   		.uleb128 0x4109
+ 1007 00d9 01       		.byte	0x1
+ 1008 00da 11       		.uleb128 0x11
+ 1009 00db 01       		.uleb128 0x1
+ 1010 00dc 31       		.uleb128 0x31
+ 1011 00dd 13       		.uleb128 0x13
+ 1012 00de 01       		.uleb128 0x1
+ 1013 00df 13       		.uleb128 0x13
+ 1014 00e0 00       		.byte	0
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 29
+
+
+ 1015 00e1 00       		.byte	0
+ 1016 00e2 0F       		.uleb128 0xf
+ 1017 00e3 8A8201   		.uleb128 0x410a
+ 1018 00e6 00       		.byte	0
+ 1019 00e7 02       		.uleb128 0x2
+ 1020 00e8 18       		.uleb128 0x18
+ 1021 00e9 9142     		.uleb128 0x2111
+ 1022 00eb 18       		.uleb128 0x18
+ 1023 00ec 00       		.byte	0
+ 1024 00ed 00       		.byte	0
+ 1025 00ee 10       		.uleb128 0x10
+ 1026 00ef 898201   		.uleb128 0x4109
+ 1027 00f2 01       		.byte	0x1
+ 1028 00f3 11       		.uleb128 0x11
+ 1029 00f4 01       		.uleb128 0x1
+ 1030 00f5 31       		.uleb128 0x31
+ 1031 00f6 13       		.uleb128 0x13
+ 1032 00f7 00       		.byte	0
+ 1033 00f8 00       		.byte	0
+ 1034 00f9 11       		.uleb128 0x11
+ 1035 00fa 01       		.uleb128 0x1
+ 1036 00fb 01       		.byte	0x1
+ 1037 00fc 49       		.uleb128 0x49
+ 1038 00fd 13       		.uleb128 0x13
+ 1039 00fe 01       		.uleb128 0x1
+ 1040 00ff 13       		.uleb128 0x13
+ 1041 0100 00       		.byte	0
+ 1042 0101 00       		.byte	0
+ 1043 0102 12       		.uleb128 0x12
+ 1044 0103 21       		.uleb128 0x21
+ 1045 0104 00       		.byte	0
+ 1046 0105 49       		.uleb128 0x49
+ 1047 0106 13       		.uleb128 0x13
+ 1048 0107 2F       		.uleb128 0x2f
+ 1049 0108 0B       		.uleb128 0xb
+ 1050 0109 00       		.byte	0
+ 1051 010a 00       		.byte	0
+ 1052 010b 13       		.uleb128 0x13
+ 1053 010c 26       		.uleb128 0x26
+ 1054 010d 00       		.byte	0
+ 1055 010e 49       		.uleb128 0x49
+ 1056 010f 13       		.uleb128 0x13
+ 1057 0110 00       		.byte	0
+ 1058 0111 00       		.byte	0
+ 1059 0112 14       		.uleb128 0x14
+ 1060 0113 2E       		.uleb128 0x2e
+ 1061 0114 01       		.byte	0x1
+ 1062 0115 3F       		.uleb128 0x3f
+ 1063 0116 19       		.uleb128 0x19
+ 1064 0117 03       		.uleb128 0x3
+ 1065 0118 0E       		.uleb128 0xe
+ 1066 0119 3A       		.uleb128 0x3a
+ 1067 011a 0B       		.uleb128 0xb
+ 1068 011b 3B       		.uleb128 0x3b
+ 1069 011c 05       		.uleb128 0x5
+ 1070 011d 27       		.uleb128 0x27
+ 1071 011e 19       		.uleb128 0x19
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 30
+
+
+ 1072 011f 49       		.uleb128 0x49
+ 1073 0120 13       		.uleb128 0x13
+ 1074 0121 11       		.uleb128 0x11
+ 1075 0122 01       		.uleb128 0x1
+ 1076 0123 12       		.uleb128 0x12
+ 1077 0124 06       		.uleb128 0x6
+ 1078 0125 40       		.uleb128 0x40
+ 1079 0126 18       		.uleb128 0x18
+ 1080 0127 9742     		.uleb128 0x2117
+ 1081 0129 19       		.uleb128 0x19
+ 1082 012a 01       		.uleb128 0x1
+ 1083 012b 13       		.uleb128 0x13
+ 1084 012c 00       		.byte	0
+ 1085 012d 00       		.byte	0
+ 1086 012e 15       		.uleb128 0x15
+ 1087 012f 05       		.uleb128 0x5
+ 1088 0130 00       		.byte	0
+ 1089 0131 03       		.uleb128 0x3
+ 1090 0132 0E       		.uleb128 0xe
+ 1091 0133 3A       		.uleb128 0x3a
+ 1092 0134 0B       		.uleb128 0xb
+ 1093 0135 3B       		.uleb128 0x3b
+ 1094 0136 05       		.uleb128 0x5
+ 1095 0137 49       		.uleb128 0x49
+ 1096 0138 13       		.uleb128 0x13
+ 1097 0139 02       		.uleb128 0x2
+ 1098 013a 17       		.uleb128 0x17
+ 1099 013b 00       		.byte	0
+ 1100 013c 00       		.byte	0
+ 1101 013d 16       		.uleb128 0x16
+ 1102 013e 34       		.uleb128 0x34
+ 1103 013f 00       		.byte	0
+ 1104 0140 03       		.uleb128 0x3
+ 1105 0141 0E       		.uleb128 0xe
+ 1106 0142 3A       		.uleb128 0x3a
+ 1107 0143 0B       		.uleb128 0xb
+ 1108 0144 3B       		.uleb128 0x3b
+ 1109 0145 05       		.uleb128 0x5
+ 1110 0146 49       		.uleb128 0x49
+ 1111 0147 13       		.uleb128 0x13
+ 1112 0148 02       		.uleb128 0x2
+ 1113 0149 18       		.uleb128 0x18
+ 1114 014a 00       		.byte	0
+ 1115 014b 00       		.byte	0
+ 1116 014c 17       		.uleb128 0x17
+ 1117 014d 34       		.uleb128 0x34
+ 1118 014e 00       		.byte	0
+ 1119 014f 03       		.uleb128 0x3
+ 1120 0150 08       		.uleb128 0x8
+ 1121 0151 3A       		.uleb128 0x3a
+ 1122 0152 0B       		.uleb128 0xb
+ 1123 0153 3B       		.uleb128 0x3b
+ 1124 0154 05       		.uleb128 0x5
+ 1125 0155 49       		.uleb128 0x49
+ 1126 0156 13       		.uleb128 0x13
+ 1127 0157 02       		.uleb128 0x2
+ 1128 0158 17       		.uleb128 0x17
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 31
+
+
+ 1129 0159 00       		.byte	0
+ 1130 015a 00       		.byte	0
+ 1131 015b 18       		.uleb128 0x18
+ 1132 015c 34       		.uleb128 0x34
+ 1133 015d 00       		.byte	0
+ 1134 015e 03       		.uleb128 0x3
+ 1135 015f 0E       		.uleb128 0xe
+ 1136 0160 3A       		.uleb128 0x3a
+ 1137 0161 0B       		.uleb128 0xb
+ 1138 0162 3B       		.uleb128 0x3b
+ 1139 0163 05       		.uleb128 0x5
+ 1140 0164 49       		.uleb128 0x49
+ 1141 0165 13       		.uleb128 0x13
+ 1142 0166 02       		.uleb128 0x2
+ 1143 0167 17       		.uleb128 0x17
+ 1144 0168 00       		.byte	0
+ 1145 0169 00       		.byte	0
+ 1146 016a 19       		.uleb128 0x19
+ 1147 016b 2E       		.uleb128 0x2e
+ 1148 016c 00       		.byte	0
+ 1149 016d 3F       		.uleb128 0x3f
+ 1150 016e 19       		.uleb128 0x19
+ 1151 016f 3C       		.uleb128 0x3c
+ 1152 0170 19       		.uleb128 0x19
+ 1153 0171 6E       		.uleb128 0x6e
+ 1154 0172 0E       		.uleb128 0xe
+ 1155 0173 03       		.uleb128 0x3
+ 1156 0174 0E       		.uleb128 0xe
+ 1157 0175 00       		.byte	0
+ 1158 0176 00       		.byte	0
+ 1159 0177 00       		.byte	0
+ 1160              		.section	.debug_loc,"",%progbits
+ 1161              	.Ldebug_loc0:
+ 1162              	.LLST0:
+ 1163 0000 00000000 		.4byte	.LVL0
+ 1164 0004 0B000000 		.4byte	.LVL3-1
+ 1165 0008 0100     		.2byte	0x1
+ 1166 000a 50       		.byte	0x50
+ 1167 000b 0B000000 		.4byte	.LVL3-1
+ 1168 000f 34000000 		.4byte	.LFE2
+ 1169 0013 0400     		.2byte	0x4
+ 1170 0015 F3       		.byte	0xf3
+ 1171 0016 01       		.uleb128 0x1
+ 1172 0017 50       		.byte	0x50
+ 1173 0018 9F       		.byte	0x9f
+ 1174 0019 00000000 		.4byte	0
+ 1175 001d 00000000 		.4byte	0
+ 1176              	.LLST1:
+ 1177 0021 00000000 		.4byte	.LVL0
+ 1178 0025 06000000 		.4byte	.LVL2
+ 1179 0029 0100     		.2byte	0x1
+ 1180 002b 51       		.byte	0x51
+ 1181 002c 06000000 		.4byte	.LVL2
+ 1182 0030 0B000000 		.4byte	.LVL3-1
+ 1183 0034 0100     		.2byte	0x1
+ 1184 0036 52       		.byte	0x52
+ 1185 0037 0B000000 		.4byte	.LVL3-1
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 32
+
+
+ 1186 003b 34000000 		.4byte	.LFE2
+ 1187 003f 0400     		.2byte	0x4
+ 1188 0041 F3       		.byte	0xf3
+ 1189 0042 01       		.uleb128 0x1
+ 1190 0043 51       		.byte	0x51
+ 1191 0044 9F       		.byte	0x9f
+ 1192 0045 00000000 		.4byte	0
+ 1193 0049 00000000 		.4byte	0
+ 1194              	.LLST2:
+ 1195 004d 04000000 		.4byte	.LVL1
+ 1196 0051 0C000000 		.4byte	.LVL3
+ 1197 0055 0A00     		.2byte	0xa
+ 1198 0057 9E       		.byte	0x9e
+ 1199 0058 08       		.uleb128 0x8
+ 1200 0059 00000000 		.8byte	0
+ 1200      00000000 
+ 1201 0061 0C000000 		.4byte	.LVL3
+ 1202 0065 16000000 		.4byte	.LVL4
+ 1203 0069 0600     		.2byte	0x6
+ 1204 006b 50       		.byte	0x50
+ 1205 006c 93       		.byte	0x93
+ 1206 006d 04       		.uleb128 0x4
+ 1207 006e 51       		.byte	0x51
+ 1208 006f 93       		.byte	0x93
+ 1209 0070 04       		.uleb128 0x4
+ 1210 0071 16000000 		.4byte	.LVL4
+ 1211 0075 1A000000 		.4byte	.LVL5
+ 1212 0079 0600     		.2byte	0x6
+ 1213 007b 52       		.byte	0x52
+ 1214 007c 93       		.byte	0x93
+ 1215 007d 04       		.uleb128 0x4
+ 1216 007e 53       		.byte	0x53
+ 1217 007f 93       		.byte	0x93
+ 1218 0080 04       		.uleb128 0x4
+ 1219 0081 1A000000 		.4byte	.LVL5
+ 1220 0085 1E000000 		.4byte	.LVL6
+ 1221 0089 0500     		.2byte	0x5
+ 1222 008b F5       		.byte	0xf5
+ 1223 008c 00       		.uleb128 0
+ 1224 008d 25       		.uleb128 0x25
+ 1225 008e 1F       		.byte	0x1f
+ 1226 008f 9F       		.byte	0x9f
+ 1227 0090 20000000 		.4byte	.LVL7
+ 1228 0094 26000000 		.4byte	.LVL8
+ 1229 0098 0600     		.2byte	0x6
+ 1230 009a 50       		.byte	0x50
+ 1231 009b 93       		.byte	0x93
+ 1232 009c 04       		.uleb128 0x4
+ 1233 009d 51       		.byte	0x51
+ 1234 009e 93       		.byte	0x93
+ 1235 009f 04       		.uleb128 0x4
+ 1236 00a0 28000000 		.4byte	.LVL9
+ 1237 00a4 2C000000 		.4byte	.LVL10
+ 1238 00a8 0600     		.2byte	0x6
+ 1239 00aa 50       		.byte	0x50
+ 1240 00ab 93       		.byte	0x93
+ 1241 00ac 04       		.uleb128 0x4
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 33
+
+
+ 1242 00ad 51       		.byte	0x51
+ 1243 00ae 93       		.byte	0x93
+ 1244 00af 04       		.uleb128 0x4
+ 1245 00b0 00000000 		.4byte	0
+ 1246 00b4 00000000 		.4byte	0
+ 1247              	.LLST3:
+ 1248 00b8 00000000 		.4byte	.LVL11
+ 1249 00bc 0C000000 		.4byte	.LVL12
+ 1250 00c0 0100     		.2byte	0x1
+ 1251 00c2 50       		.byte	0x50
+ 1252 00c3 0C000000 		.4byte	.LVL12
+ 1253 00c7 1C000000 		.4byte	.LVL16
+ 1254 00cb 0100     		.2byte	0x1
+ 1255 00cd 54       		.byte	0x54
+ 1256 00ce 1C000000 		.4byte	.LVL16
+ 1257 00d2 1E000000 		.4byte	.LVL17
+ 1258 00d6 0100     		.2byte	0x1
+ 1259 00d8 55       		.byte	0x55
+ 1260 00d9 1E000000 		.4byte	.LVL17
+ 1261 00dd 20000000 		.4byte	.LVL18
+ 1262 00e1 0100     		.2byte	0x1
+ 1263 00e3 54       		.byte	0x54
+ 1264 00e4 20000000 		.4byte	.LVL18
+ 1265 00e8 4E000000 		.4byte	.LVL27
+ 1266 00ec 0100     		.2byte	0x1
+ 1267 00ee 55       		.byte	0x55
+ 1268 00ef 4E000000 		.4byte	.LVL27
+ 1269 00f3 5E000000 		.4byte	.LVL30
+ 1270 00f7 0100     		.2byte	0x1
+ 1271 00f9 54       		.byte	0x54
+ 1272 00fa 5E000000 		.4byte	.LVL30
+ 1273 00fe 60000000 		.4byte	.LVL31
+ 1274 0102 0100     		.2byte	0x1
+ 1275 0104 55       		.byte	0x55
+ 1276 0105 60000000 		.4byte	.LVL31
+ 1277 0109 62000000 		.4byte	.LVL32
+ 1278 010d 0100     		.2byte	0x1
+ 1279 010f 54       		.byte	0x54
+ 1280 0110 62000000 		.4byte	.LVL32
+ 1281 0114 90000000 		.4byte	.LVL41
+ 1282 0118 0100     		.2byte	0x1
+ 1283 011a 55       		.byte	0x55
+ 1284 011b 90000000 		.4byte	.LVL41
+ 1285 011f 9A000000 		.4byte	.LVL44
+ 1286 0123 0100     		.2byte	0x1
+ 1287 0125 54       		.byte	0x54
+ 1288 0126 9A000000 		.4byte	.LVL44
+ 1289 012a 9C000000 		.4byte	.LVL45
+ 1290 012e 0100     		.2byte	0x1
+ 1291 0130 55       		.byte	0x55
+ 1292 0131 9C000000 		.4byte	.LVL45
+ 1293 0135 9E000000 		.4byte	.LVL46
+ 1294 0139 0100     		.2byte	0x1
+ 1295 013b 54       		.byte	0x54
+ 1296 013c 9E000000 		.4byte	.LVL46
+ 1297 0140 CC000000 		.4byte	.LVL56
+ 1298 0144 0100     		.2byte	0x1
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 34
+
+
+ 1299 0146 55       		.byte	0x55
+ 1300 0147 00000000 		.4byte	0
+ 1301 014b 00000000 		.4byte	0
+ 1302              	.LLST4:
+ 1303 014f 10000000 		.4byte	.LVL13
+ 1304 0153 26000000 		.4byte	.LVL19
+ 1305 0157 0200     		.2byte	0x2
+ 1306 0159 30       		.byte	0x30
+ 1307 015a 9F       		.byte	0x9f
+ 1308 015b 26000000 		.4byte	.LVL19
+ 1309 015f 32000000 		.4byte	.LVL20
+ 1310 0163 0100     		.2byte	0x1
+ 1311 0165 50       		.byte	0x50
+ 1312 0166 38000000 		.4byte	.LVL21
+ 1313 016a 46000000 		.4byte	.LVL24
+ 1314 016e 0100     		.2byte	0x1
+ 1315 0170 50       		.byte	0x50
+ 1316 0171 46000000 		.4byte	.LVL24
+ 1317 0175 4A000000 		.4byte	.LVL25
+ 1318 0179 0500     		.2byte	0x5
+ 1319 017b 73       		.byte	0x73
+ 1320 017c D7E556   		.sleb128 -675113
+ 1321 017f 9F       		.byte	0x9f
+ 1322 0180 4C000000 		.4byte	.LVL26
+ 1323 0184 4E000000 		.4byte	.LVL27
+ 1324 0188 0100     		.2byte	0x1
+ 1325 018a 50       		.byte	0x50
+ 1326 018b 4E000000 		.4byte	.LVL27
+ 1327 018f 68000000 		.4byte	.LVL33
+ 1328 0193 0200     		.2byte	0x2
+ 1329 0195 30       		.byte	0x30
+ 1330 0196 9F       		.byte	0x9f
+ 1331 0197 68000000 		.4byte	.LVL33
+ 1332 019b 74000000 		.4byte	.LVL34
+ 1333 019f 0100     		.2byte	0x1
+ 1334 01a1 50       		.byte	0x50
+ 1335 01a2 7A000000 		.4byte	.LVL35
+ 1336 01a6 88000000 		.4byte	.LVL38
+ 1337 01aa 0100     		.2byte	0x1
+ 1338 01ac 50       		.byte	0x50
+ 1339 01ad 88000000 		.4byte	.LVL38
+ 1340 01b1 8C000000 		.4byte	.LVL39
+ 1341 01b5 0500     		.2byte	0x5
+ 1342 01b7 73       		.byte	0x73
+ 1343 01b8 DBBA5D   		.sleb128 -565925
+ 1344 01bb 9F       		.byte	0x9f
+ 1345 01bc 8E000000 		.4byte	.LVL40
+ 1346 01c0 90000000 		.4byte	.LVL41
+ 1347 01c4 0100     		.2byte	0x1
+ 1348 01c6 50       		.byte	0x50
+ 1349 01c7 90000000 		.4byte	.LVL41
+ 1350 01cb A4000000 		.4byte	.LVL47
+ 1351 01cf 0200     		.2byte	0x2
+ 1352 01d1 30       		.byte	0x30
+ 1353 01d2 9F       		.byte	0x9f
+ 1354 01d3 A4000000 		.4byte	.LVL47
+ 1355 01d7 B0000000 		.4byte	.LVL48
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 35
+
+
+ 1356 01db 0100     		.2byte	0x1
+ 1357 01dd 50       		.byte	0x50
+ 1358 01de B6000000 		.4byte	.LVL49
+ 1359 01e2 C4000000 		.4byte	.LVL52
+ 1360 01e6 0100     		.2byte	0x1
+ 1361 01e8 50       		.byte	0x50
+ 1362 01e9 C4000000 		.4byte	.LVL52
+ 1363 01ed C8000000 		.4byte	.LVL53
+ 1364 01f1 0600     		.2byte	0x6
+ 1365 01f3 73       		.byte	0x73
+ 1366 01f4 B9B4C906 		.sleb128 13785657
+ 1367 01f8 9F       		.byte	0x9f
+ 1368 01f9 CA000000 		.4byte	.LVL54
+ 1369 01fd E4000000 		.4byte	.LFE3
+ 1370 0201 0100     		.2byte	0x1
+ 1371 0203 50       		.byte	0x50
+ 1372 0204 00000000 		.4byte	0
+ 1373 0208 00000000 		.4byte	0
+ 1374              	.LLST5:
+ 1375 020c 10000000 		.4byte	.LVL13
+ 1376 0210 20000000 		.4byte	.LVL18
+ 1377 0214 0200     		.2byte	0x2
+ 1378 0216 30       		.byte	0x30
+ 1379 0217 9F       		.byte	0x9f
+ 1380 0218 20000000 		.4byte	.LVL18
+ 1381 021c 26000000 		.4byte	.LVL19
+ 1382 0220 0200     		.2byte	0x2
+ 1383 0222 35       		.byte	0x35
+ 1384 0223 9F       		.byte	0x9f
+ 1385 0224 26000000 		.4byte	.LVL19
+ 1386 0228 3A000000 		.4byte	.LVL22
+ 1387 022c 0100     		.2byte	0x1
+ 1388 022e 54       		.byte	0x54
+ 1389 022f 3C000000 		.4byte	.LVL23
+ 1390 0233 4E000000 		.4byte	.LVL27
+ 1391 0237 0100     		.2byte	0x1
+ 1392 0239 54       		.byte	0x54
+ 1393 023a 4E000000 		.4byte	.LVL27
+ 1394 023e 62000000 		.4byte	.LVL32
+ 1395 0242 0200     		.2byte	0x2
+ 1396 0244 30       		.byte	0x30
+ 1397 0245 9F       		.byte	0x9f
+ 1398 0246 62000000 		.4byte	.LVL32
+ 1399 024a 68000000 		.4byte	.LVL33
+ 1400 024e 0200     		.2byte	0x2
+ 1401 0250 35       		.byte	0x35
+ 1402 0251 9F       		.byte	0x9f
+ 1403 0252 68000000 		.4byte	.LVL33
+ 1404 0256 7C000000 		.4byte	.LVL36
+ 1405 025a 0100     		.2byte	0x1
+ 1406 025c 54       		.byte	0x54
+ 1407 025d 7E000000 		.4byte	.LVL37
+ 1408 0261 90000000 		.4byte	.LVL41
+ 1409 0265 0100     		.2byte	0x1
+ 1410 0267 54       		.byte	0x54
+ 1411 0268 90000000 		.4byte	.LVL41
+ 1412 026c 9E000000 		.4byte	.LVL46
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 36
+
+
+ 1413 0270 0200     		.2byte	0x2
+ 1414 0272 30       		.byte	0x30
+ 1415 0273 9F       		.byte	0x9f
+ 1416 0274 9E000000 		.4byte	.LVL46
+ 1417 0278 A4000000 		.4byte	.LVL47
+ 1418 027c 0200     		.2byte	0x2
+ 1419 027e 35       		.byte	0x35
+ 1420 027f 9F       		.byte	0x9f
+ 1421 0280 A4000000 		.4byte	.LVL47
+ 1422 0284 B8000000 		.4byte	.LVL50
+ 1423 0288 0100     		.2byte	0x1
+ 1424 028a 54       		.byte	0x54
+ 1425 028b BA000000 		.4byte	.LVL51
+ 1426 028f CC000000 		.4byte	.LVL55
+ 1427 0293 0100     		.2byte	0x1
+ 1428 0295 54       		.byte	0x54
+ 1429 0296 00000000 		.4byte	0
+ 1430 029a 00000000 		.4byte	0
+ 1431              	.LLST6:
+ 1432 029e 00000000 		.4byte	.LVL57
+ 1433 02a2 1E000000 		.4byte	.LVL59
+ 1434 02a6 0100     		.2byte	0x1
+ 1435 02a8 50       		.byte	0x50
+ 1436 02a9 1E000000 		.4byte	.LVL59
+ 1437 02ad 24000000 		.4byte	.LVL62
+ 1438 02b1 0100     		.2byte	0x1
+ 1439 02b3 55       		.byte	0x55
+ 1440 02b4 24000000 		.4byte	.LVL62
+ 1441 02b8 26000000 		.4byte	.LVL63
+ 1442 02bc 0100     		.2byte	0x1
+ 1443 02be 50       		.byte	0x50
+ 1444 02bf 26000000 		.4byte	.LVL63
+ 1445 02c3 4C000000 		.4byte	.LVL72
+ 1446 02c7 0100     		.2byte	0x1
+ 1447 02c9 55       		.byte	0x55
+ 1448 02ca 00000000 		.4byte	0
+ 1449 02ce 00000000 		.4byte	0
+ 1450              	.LLST7:
+ 1451 02d2 18000000 		.4byte	.LVL58
+ 1452 02d6 26000000 		.4byte	.LVL63
+ 1453 02da 0200     		.2byte	0x2
+ 1454 02dc 30       		.byte	0x30
+ 1455 02dd 9F       		.byte	0x9f
+ 1456 02de 26000000 		.4byte	.LVL63
+ 1457 02e2 2C000000 		.4byte	.LVL64
+ 1458 02e6 0200     		.2byte	0x2
+ 1459 02e8 38       		.byte	0x38
+ 1460 02e9 9F       		.byte	0x9f
+ 1461 02ea 2C000000 		.4byte	.LVL64
+ 1462 02ee 3C000000 		.4byte	.LVL67
+ 1463 02f2 0100     		.2byte	0x1
+ 1464 02f4 54       		.byte	0x54
+ 1465 02f5 3E000000 		.4byte	.LVL68
+ 1466 02f9 4C000000 		.4byte	.LVL71
+ 1467 02fd 0100     		.2byte	0x1
+ 1468 02ff 54       		.byte	0x54
+ 1469 0300 00000000 		.4byte	0
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 37
+
+
+ 1470 0304 00000000 		.4byte	0
+ 1471              	.LLST8:
+ 1472 0308 18000000 		.4byte	.LVL58
+ 1473 030c 2C000000 		.4byte	.LVL64
+ 1474 0310 0200     		.2byte	0x2
+ 1475 0312 30       		.byte	0x30
+ 1476 0313 9F       		.byte	0x9f
+ 1477 0314 2C000000 		.4byte	.LVL64
+ 1478 0318 34000000 		.4byte	.LVL65
+ 1479 031c 0100     		.2byte	0x1
+ 1480 031e 50       		.byte	0x50
+ 1481 031f 3A000000 		.4byte	.LVL66
+ 1482 0323 48000000 		.4byte	.LVL69
+ 1483 0327 0100     		.2byte	0x1
+ 1484 0329 50       		.byte	0x50
+ 1485 032a 4A000000 		.4byte	.LVL70
+ 1486 032e 54000000 		.4byte	.LFE4
+ 1487 0332 0100     		.2byte	0x1
+ 1488 0334 50       		.byte	0x50
+ 1489 0335 00000000 		.4byte	0
+ 1490 0339 00000000 		.4byte	0
+ 1491              		.section	.debug_aranges,"",%progbits
+ 1492 0000 2C000000 		.4byte	0x2c
+ 1493 0004 0200     		.2byte	0x2
+ 1494 0006 00000000 		.4byte	.Ldebug_info0
+ 1495 000a 04       		.byte	0x4
+ 1496 000b 00       		.byte	0
+ 1497 000c 0000     		.2byte	0
+ 1498 000e 0000     		.2byte	0
+ 1499 0010 00000000 		.4byte	.LFB2
+ 1500 0014 34000000 		.4byte	.LFE2-.LFB2
+ 1501 0018 00000000 		.4byte	.LFB3
+ 1502 001c E4000000 		.4byte	.LFE3-.LFB3
+ 1503 0020 00000000 		.4byte	.LFB4
+ 1504 0024 54000000 		.4byte	.LFE4-.LFB4
+ 1505 0028 00000000 		.4byte	0
+ 1506 002c 00000000 		.4byte	0
+ 1507              		.section	.debug_ranges,"",%progbits
+ 1508              	.Ldebug_ranges0:
+ 1509 0000 00000000 		.4byte	.LFB2
+ 1510 0004 34000000 		.4byte	.LFE2
+ 1511 0008 00000000 		.4byte	.LFB3
+ 1512 000c E4000000 		.4byte	.LFE3
+ 1513 0010 00000000 		.4byte	.LFB4
+ 1514 0014 54000000 		.4byte	.LFE4
+ 1515 0018 00000000 		.4byte	0
+ 1516 001c 00000000 		.4byte	0
+ 1517              		.section	.debug_line,"",%progbits
+ 1518              	.Ldebug_line0:
+ 1519 0000 22010000 		.section	.debug_str,"MS",%progbits,1
+ 1519      02005300 
+ 1519      00000201 
+ 1519      FB0E0D00 
+ 1519      01010101 
+ 1520              	.LASF22:
+ 1521 0000 766F6C74 		.ascii	"voltage\000"
+ 1521      61676500 
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 38
+
+
+ 1522              	.LASF33:
+ 1523 0008 433A5C55 		.ascii	"C:\\Users\\freem\\OneDrive\\Documents\\ECE\\ECE 405"
+ 1523      73657273 
+ 1523      5C667265 
+ 1523      656D5C4F 
+ 1523      6E654472 
+ 1524 0035 5F343036 		.ascii	"_406\\ECE_406\\SPI_Master.cydsn\000"
+ 1524      5C454345 
+ 1524      5F343036 
+ 1524      5C535049 
+ 1524      5F4D6173 
+ 1525              	.LASF13:
+ 1526 0053 666C6F61 		.ascii	"float\000"
+ 1526      7400
+ 1527              	.LASF25:
+ 1528 0059 54686572 		.ascii	"ThermocoupleCalculator_xScaleVT\000"
+ 1528      6D6F636F 
+ 1528      75706C65 
+ 1528      43616C63 
+ 1528      756C6174 
+ 1529              	.LASF26:
+ 1530 0079 54686572 		.ascii	"ThermocoupleCalculator_coefScaleVT\000"
+ 1530      6D6F636F 
+ 1530      75706C65 
+ 1530      43616C63 
+ 1530      756C6174 
+ 1531              	.LASF16:
+ 1532 009c 75696E74 		.ascii	"uint64\000"
+ 1532      363400
+ 1533              	.LASF4:
+ 1534 00a3 73686F72 		.ascii	"short unsigned int\000"
+ 1534      7420756E 
+ 1534      7369676E 
+ 1534      65642069 
+ 1534      6E7400
+ 1535              	.LASF29:
+ 1536 00b6 74656D70 		.ascii	"temperature\000"
+ 1536      65726174 
+ 1536      75726500 
+ 1537              	.LASF20:
+ 1538 00c2 54686572 		.ascii	"ThermocoupleCalculator_MultShift24\000"
+ 1538      6D6F636F 
+ 1538      75706C65 
+ 1538      43616C63 
+ 1538      756C6174 
+ 1539              	.LASF2:
+ 1540 00e5 756E7369 		.ascii	"unsigned char\000"
+ 1540      676E6564 
+ 1540      20636861 
+ 1540      7200
+ 1541              	.LASF21:
+ 1542 00f3 54686572 		.ascii	"ThermocoupleCalculator_GetTemperature\000"
+ 1542      6D6F636F 
+ 1542      75706C65 
+ 1542      43616C63 
+ 1542      756C6174 
+ 1543              	.LASF6:
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 39
+
+
+ 1544 0119 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1544      20756E73 
+ 1544      69676E65 
+ 1544      6420696E 
+ 1544      7400
+ 1545              	.LASF27:
+ 1546 012b 74656D70 		.ascii	"temp\000"
+ 1546      00
+ 1547              	.LASF12:
+ 1548 0130 696E7433 		.ascii	"int32\000"
+ 1548      3200
+ 1549              	.LASF24:
+ 1550 0136 54686572 		.ascii	"ThermocoupleCalculator_coeffVT\000"
+ 1550      6D6F636F 
+ 1550      75706C65 
+ 1550      43616C63 
+ 1550      756C6174 
+ 1551              	.LASF28:
+ 1552 0155 54686572 		.ascii	"ThermocoupleCalculator_GetVoltage\000"
+ 1552      6D6F636F 
+ 1552      75706C65 
+ 1552      43616C63 
+ 1552      756C6174 
+ 1553              	.LASF14:
+ 1554 0177 646F7562 		.ascii	"double\000"
+ 1554      6C6500
+ 1555              	.LASF3:
+ 1556 017e 73686F72 		.ascii	"short int\000"
+ 1556      7420696E 
+ 1556      7400
+ 1557              	.LASF11:
+ 1558 0188 696E7438 		.ascii	"int8\000"
+ 1558      00
+ 1559              	.LASF10:
+ 1560 018d 75696E74 		.ascii	"uint32\000"
+ 1560      333200
+ 1561              	.LASF8:
+ 1562 0194 756E7369 		.ascii	"unsigned int\000"
+ 1562      676E6564 
+ 1562      20696E74 
+ 1562      00
+ 1563              	.LASF0:
+ 1564 01a1 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1564      206C6F6E 
+ 1564      6720756E 
+ 1564      7369676E 
+ 1564      65642069 
+ 1565              	.LASF23:
+ 1566 01b8 72657375 		.ascii	"result\000"
+ 1566      6C7400
+ 1567              	.LASF31:
+ 1568 01bf 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1568      43313120 
+ 1568      352E342E 
+ 1568      31203230 
+ 1568      31363036 
+ 1569 01f2 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 40
+
+
+ 1569      20726576 
+ 1569      6973696F 
+ 1569      6E203233 
+ 1569      37373135 
+ 1570 0225 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1570      66756E63 
+ 1570      74696F6E 
+ 1570      2D736563 
+ 1570      74696F6E 
+ 1571              	.LASF19:
+ 1572 024d 73697A65 		.ascii	"sizetype\000"
+ 1572      74797065 
+ 1572      00
+ 1573              	.LASF7:
+ 1574 0256 6C6F6E67 		.ascii	"long long int\000"
+ 1574      206C6F6E 
+ 1574      6720696E 
+ 1574      7400
+ 1575              	.LASF35:
+ 1576 0264 6D656D63 		.ascii	"memcpy\000"
+ 1576      707900
+ 1577              	.LASF34:
+ 1578 026b 54686572 		.ascii	"ThermocoupleCalculator_voltRange\000"
+ 1578      6D6F636F 
+ 1578      75706C65 
+ 1578      43616C63 
+ 1578      756C6174 
+ 1579              	.LASF32:
+ 1580 028c 47656E65 		.ascii	"Generated_Source\\PSoC4\\ThermocoupleCalculator.c\000"
+ 1580      72617465 
+ 1580      645F536F 
+ 1580      75726365 
+ 1580      5C50536F 
+ 1581              	.LASF9:
+ 1582 02bc 75696E74 		.ascii	"uint8\000"
+ 1582      3800
+ 1583              	.LASF5:
+ 1584 02c2 6C6F6E67 		.ascii	"long int\000"
+ 1584      20696E74 
+ 1584      00
+ 1585              	.LASF17:
+ 1586 02cb 63686172 		.ascii	"char\000"
+ 1586      00
+ 1587              	.LASF18:
+ 1588 02d0 6C6F6E67 		.ascii	"long double\000"
+ 1588      20646F75 
+ 1588      626C6500 
+ 1589              	.LASF1:
+ 1590 02dc 7369676E 		.ascii	"signed char\000"
+ 1590      65642063 
+ 1590      68617200 
+ 1591              	.LASF30:
+ 1592 02e8 54686572 		.ascii	"ThermocoupleCalculator_coeffTV\000"
+ 1592      6D6F636F 
+ 1592      75706C65 
+ 1592      43616C63 
+ 1592      756C6174 
+ARM GAS  C:\Users\freem\AppData\Local\Temp\ccCqoMXZ.s 			page 41
+
+
+ 1593              	.LASF15:
+ 1594 0307 696E7436 		.ascii	"int64\000"
+ 1594      3400
+ 1595              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

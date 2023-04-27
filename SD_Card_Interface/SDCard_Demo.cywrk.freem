@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="SDCard_Demo\SDCard_Demo\Generated_Source\PSoC4\Em_EEPROM_Dynamic">
+<ExpandedNodeIds>
+<v>SDCard_Demo</v>
+<v>SDCard_Demo\SDCard_Demo</v>
+<v>SDCard_Demo\SDCard_Demo\TopDesign</v>
+<v>SDCard_Demo\SDCard_Demo\SDCard_Demo.cydwr</v>
+<v>SDCard_Demo\SDCard_Demo\SDCard_Demo.cydwr\Pins</v>
+<v>SDCard_Demo\SDCard_Demo\SDCard_Demo.cydwr\Analog</v>
+<v>SDCard_Demo\SDCard_Demo\SDCard_Demo.cydwr\DMA</v>
+<v>SDCard_Demo\SDCard_Demo\SDCard_Demo.cydwr\Clocks</v>
+<v>SDCard_Demo\SDCard_Demo\SDCard_Demo.cydwr\Interrupts</v>
+<v>SDCard_Demo\SDCard_Demo\SDCard_Demo.cydwr\System</v>
+<v>SDCard_Demo\SDCard_Demo\SDCard_Demo.cydwr\Directives</v>
+<v>SDCard_Demo\SDCard_Demo\SDCard_Demo.cydwr\Flash Security</v>
+<v>SDCard_Demo\SDCard_Demo\Header Files</v>
+<v>SDCard_Demo\SDCard_Demo\Header Files\device.h</v>
+<v>SDCard_Demo\SDCard_Demo\Source Files</v>
+<v>SDCard_Demo\SDCard_Demo\Source Files\main.c</v>
+<v>SDCard_Demo\SDCard_Demo\Generated_Source</v>
+<v>SDCard_Demo\SDCard_Demo\Generated_Source\PSoC4</v>
+</ExpandedNodeIds>
+<VisibleNodeIds />
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>SDCard_Demo</v>
+<v>SDCard_Demo\SDCard_Demo</v>
+<v>SDCard_Demo\SDCard_Demo\PSoC_4_Pioneer_Kit</v>
+<v>SDCard_Demo\SDCard_Demo\PSoC_4_Pioneer_Kit\PSoC_4_Pioneer_Kit.cysch</v>
+<v>SDCard_Demo\SDCard_Demo\PSoC_4_Pioneer_Kit\PSoC_4_Pioneer_Kit.cysym</v>
+<v>SDCard_Demo\SDCard_Demo\SDCard</v>
+<v>SDCard_Demo\SDCard_Demo\SDCard\API</v>
+<v>SDCard_Demo\SDCard_Demo\SDCard\API\SDCard.h</v>
+<v>SDCard_Demo\SDCard_Demo\SDCard\API\SDCard_FS.c</v>
+<v>SDCard_Demo\SDCard_Demo\SDCard\API\SDCard_FS.h</v>
+<v>SDCard_Demo\SDCard_Demo\SDCard\API\SDCard_SPI.c</v>
+<v>SDCard_Demo\SDCard_Demo\SDCard\API\SDCard_SPI.h</v>
+<v>SDCard_Demo\SDCard_Demo\SDCard\SDCard.cysch</v>
+<v>SDCard_Demo\SDCard_Demo\SDCard\SDCard.cysym</v>
+<v>SDCard_Demo\SDCard_Demo\TopDesign</v>
+<v>SDCard_Demo\SDCard_Demo\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds />
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>SDCard_Demo</v>
+<v>SDCard_Demo\SDCard_Demo</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\CyDMA.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_FS.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SD_CD.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SD_CD_PM.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SD_Clock.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SD_CS.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SD_CS_PM.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SD_PWR.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SD_PWR_PM.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SD_WP.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SD_WP_PM.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SPI.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SPIM.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SPIM_BOOT.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SPIM_miso_m.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SPIM_miso_m_PM.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SPIM_mosi_m.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SPIM_mosi_m_PM.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SPIM_PM.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SPIM_SCB_IRQ.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SPIM_sclk_m.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SPIM_sclk_m_PM.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SPIM_SPI.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SPIM_SPI_BOOT.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SPIM_SPI_UART.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SPIM_SPI_UART_INT.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SPIM_ss0_m.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\Listing Files\SDCard_SPIM_ss0_m_PM.lst</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\SDCard_Demo.elf</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\SDCard_Demo.hex</v>
+<v>SDCard_Demo\SDCard_Demo\CortexM0\ARM_GCC_541\Debug\SDCard_Demo.map</v>
+<v>SDCard_Demo\SDCard_Demo\SDCard_Demo.gpdsc</v>
+<v>SDCard_Demo\SDCard_Demo\SDCard_Demo.rpt</v>
+<v>SDCard_Demo\SDCard_Demo\SDCard_Demo_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds />
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>SDCard_Demo</v>
+<v>SDCard_Demo\SDCard_Demo</v>
+<v>SDCard_Demo\SDCard_Demo\PSoC 4 Architecture TRM</v>
+<v>SDCard_Demo\SDCard_Demo\PSoC 4200 BLE Family Datasheet</v>
+<v>SDCard_Demo\SDCard_Demo\System Reference Guides</v>
+<v>SDCard_Demo\SDCard_Demo\System Reference Guides\cy_boot_v6_10</v>
+<v>SDCard_Demo\SDCard_Demo\System Reference Guides\cy_dmac_v1_10</v>
+<v>SDCard_Demo\SDCard_Demo\System Reference Guides\cy_lfclk_v1_20</v>
+</ExpandedNodeIds>
+<VisibleNodeIds />
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\SDCard_Demo.cydsn\SDCard_Demo.cydwr" />
+<name v=".\SDCard_Demo.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\SDCard_Demo.cydsn\main.c" />
+<name v=".\SDCard_Demo.cydsn\Generated_Source\PSoC4\SDCard_FS.c" />
+<name v=".\SDCard_Demo.cydsn\Generated_Source\PSoC4\SDCard_SPI.c" />
+<name v=".\SDCard_Demo.cydsn\Generated_Source\PSoC4\SDCard_SPIM_SPI_UART.c" />
+<name v=".\SDCard_Demo.cydsn\Generated_Source\PSoC4\CyBootAsmGnu.s" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="2311, 1063" SelectedTabbedMdiWindow="c0362958-eaa9-4d5e-81d0-a85aa3c0cc28"><DocumentWindow Key="C:\Users\freem\OneDrive\Documents\ECE\ECE 405_406\SD_Card_Interface\SDCard_Demo.cydsn\SDCard_Demo.cydwr" Guid="c0362958-eaa9-4d5e-81d0-a85aa3c0cc28" /><DocumentWindow Key="C:\Users\freem\OneDrive\Documents\ECE\ECE 405_406\SD_Card_Interface\SDCard_Demo.cydsn\TopDesign\TopDesign.cysch" Guid="edb309c3-9723-4061-a7fe-f56cebcf2143" /><DocumentWindow Key="C:\Users\freem\OneDrive\Documents\ECE\ECE 405_406\SD_Card_Interface\SDCard_Demo.cydsn\main.c" Guid="173c1a5e-fd8f-418f-9c2d-498097520fa8" /><DocumentWindow Key="C:\Users\freem\OneDrive\Documents\ECE\ECE 405_406\SD_Card_Interface\SDCard_Demo.cydsn\Generated_Source\PSoC4\SDCard_FS.c" Guid="d0b295ed-9a97-44c5-8bcd-779c85fedea9" /><DocumentWindow Key="C:\Users\freem\OneDrive\Documents\ECE\ECE 405_406\SD_Card_Interface\SDCard_Demo.cydsn\Generated_Source\PSoC4\SDCard_SPI.c" Guid="8a4eb9e9-15f5-4dad-8965-93544d5688db" /><DocumentWindow Key="C:\Users\freem\OneDrive\Documents\ECE\ECE 405_406\SD_Card_Interface\SDCard_Demo.cydsn\Generated_Source\PSoC4\SDCard_SPIM_SPI_UART.c" Guid="bf2225b7-cb75-45b0-b188-7a1b0d5a6489" /><DocumentWindow Key="C:\Users\freem\OneDrive\Documents\ECE\ECE 405_406\SD_Card_Interface\SDCard_Demo.cydsn\Generated_Source\PSoC4\CyBootAsmGnu.s" Guid="42b67cc2-4603-432c-bca4-b61e1aa876e2" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="e61b60ac-342d-4917-8128-5ecd17912c8a" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>

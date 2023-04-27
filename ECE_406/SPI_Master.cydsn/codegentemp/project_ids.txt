@@ -1,0 +1,6 @@
+C:\Users\Surface\OneDrive\Documents\ECE\ECE 405_406\ECE_406\SPI_Master.cydsn\SPI_Master.cyprj|ff3baecb-52b7-4532-9c8e-4152083e0991
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|e5356ab3-dd57-44ad-bba4-892a9bbf9cac
+C:\Users\Surface\OneDrive\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|32d7a922-55c2-427c-8a07-e0db65a21b55
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|4e1e2c92-8f6a-4edc-b081-2d47d7d64447
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|5b9f5cd6-4bdf-4947-b588-6e74a1a5d8b9
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|0230a6b1-1202-4a14-9104-b4974596186c
